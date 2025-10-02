@@ -11,13 +11,13 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "org.apiary.init.client.ModCommonInitDataGenerator"
+      "org.apiary.hauntedshoals.init.ModDataGenInit"
     ],
     "client": [
-      "org.apiary.init.client.ModCommonInitClient"
+      "org.apiary.hauntedshoals.init.ModClientInit"
     ],
     "main": [
-      "org.apiary.init.ModCommonInit"
+      "org.apiary.hauntedshoals.init.ModCommonInit"
     ]
   },
   "mixins": [

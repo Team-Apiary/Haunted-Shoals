@@ -1,4 +1,4 @@
-package org.apiary.init;
+package org.apiary.hauntedshoals.init;
 
 import net.fabricmc.api.ClientModInitializer;
 
