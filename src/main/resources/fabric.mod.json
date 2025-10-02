@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "haunted_shoals",
+  "version": "${version}",
+  "name": "Haunted Shoals",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/haunted_shoals/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.apiary.init.client.ModCommonInitDataGenerator"
+    ],
+    "client": [
+      "org.apiary.init.client.ModCommonInitClient"
+    ],
+    "main": [
+      "org.apiary.init.ModCommonInit"
+    ]
+  },
+  "mixins": [
+    "haunted_shoals.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
