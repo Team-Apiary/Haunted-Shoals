@@ -9,6 +9,7 @@
       "lower_size": 0,
       "upper_size": 0
     },
+
     "dirt_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
@@ -16,12 +17,22 @@
       }
     },
     "trunk_provider": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:stone"
-      }
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 1,
+          "data": {
+            "Name": "minecraft:gravel"
+          }
+        },
+        {
+          "weight": 7,
+          "data": {
+            "Name": "minecraft:stone"
+          }
+        }
+      ]
     },
-
     "foliage_provider": {
       "type": "minecraft:weighted_state_provider",
       "entries": [
@@ -32,7 +43,7 @@
           }
         },
         {
-          "weight": 4,
+          "weight": 7,
           "data": {
             "Name": "minecraft:stone"
           }
@@ -51,14 +62,15 @@
       "type": "minecraft:cherry_foliage_placer",
       "radius": {
         "type": "minecraft:biased_to_bottom",
-        "min_inclusive": 2,
-        "max_inclusive": 4
+          "min_inclusive": 6,
+          "max_inclusive": 10
       },
       "offset": 0,
+
       "height": {
         "type": "minecraft:biased_to_bottom",
-        "min_inclusive": 8,
-        "max_inclusive": 16
+          "min_inclusive": 8,
+          "max_inclusive": 12
       },
       "wide_bottom_layer_hole_chance": 0.2,
       "corner_hole_chance": 0.7,

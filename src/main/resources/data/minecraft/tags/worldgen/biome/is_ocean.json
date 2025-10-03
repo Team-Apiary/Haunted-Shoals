@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "haunted_shoals:haunted_shoals",
-    "haunted_shoals:rocky_shoals"
+    "haunted_shoals:haunted_shoals"
   ]
 }

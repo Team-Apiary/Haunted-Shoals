@@ -1,0 +1,189 @@
+{
+	"name": "haunted_shoals:haunted_shipwrecks",
+	"fallback": "minecraft:empty",
+	"elements": [
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/rightsideup_backhalf",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/rightsideup_backhalf_degraded",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/rightsideup_fronthalf",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/rightsideup_fronthalf_degraded",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/rightsideup_full",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/rightsideup_full_degraded",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/sideways_backhalf",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/sideways_backhalf_degraded",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/sideways_fronthalf",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/sideways_fronthalf_degraded",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/sideways_full",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/sideways_full_degraded",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/upsidedown_backhalf",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/upsidedown_backhalf_degraded",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/upsidedown_fronthalf",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/upsidedown_fronthalf_degraded",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/upsidedown_full",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/upsidedown_full_degraded",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/with_mast",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		},
+		{
+			"weight": 1,
+			"element": {
+				"element_type": "minecraft:single_pool_element",
+				"location": "haunted_shoals:haunted_shipwreck/with_mast_degraded",
+				"projection": "rigid",
+				"processors": "minecraft:empty"
+			}
+		}
+	]
+}
