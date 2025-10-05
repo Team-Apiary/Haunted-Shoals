@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "haunted_shoals:block/haunted_planks"
+  }
+}

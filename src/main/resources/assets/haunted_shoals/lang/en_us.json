@@ -1,5 +1,26 @@
 {
   "itemgroup.haunted_shoals": "Haunted Shoals",
 
-  "block.haunted_shoals.haunted_planks": "Haunted Planks"
+  "item.haunted_shoals.cursed_seaglass": "Cursed Seaglass",
+  "item.haunted_shoals.cursed_seaglass_staff": "Cursed Seaglass",
+
+  "item.haunted_shoals.diamond_cutlass": "Diamond Cutlass",
+
+  "block.haunted_shoals.haunted_planks": "Haunted Planks",
+  "block.haunted_shoals.haunted_stairs": "Haunted Stairs",
+  "block.haunted_shoals.haunted_slab": "Haunted Slab",
+  "block.haunted_shoals.haunted_fence": "Haunted Fence",
+  "block.haunted_shoals.haunted_fence_gate": "Haunted Fence Gate",
+  "block.haunted_shoals.haunted_pressure_plate": "Haunted Pressure Plate",
+  "block.haunted_shoals.haunted_button": "Haunted Button",
+
+  "block.haunted_shoals.dark_haunted_planks": "Dark Haunted Planks",
+  "block.haunted_shoals.dark_haunted_stairs": "Dark Haunted Stairs",
+  "block.haunted_shoals.dark_haunted_slab": "Dark Haunted Slab",
+  "block.haunted_shoals.dark_haunted_fence": "Dark Haunted Fence",
+  "block.haunted_shoals.dark_haunted_fence_gate": "Dark Haunted Fence Gate",
+  "block.haunted_shoals.dark_haunted_pressure_plate": "Dark Haunted Pressure Plate",
+  "block.haunted_shoals.dark_haunted_button": "Dark Haunted Button",
+
+  "biome.haunted_shoals.haunted_shoals": "Haunted Shoals"
 }

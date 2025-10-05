@@ -1,11 +1,11 @@
 package org.apiary.hauntedshoals.init;
 
 import net.fabricmc.api.ModInitializer;
+import org.apiary.hauntedshoals.item.ModItemGroups;
 import org.apiary.hauntedshoals.item.ModItems;
 import org.apiary.hauntedshoals.block.ModBlocks;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
-
 
 public class ModCommonInit implements ModInitializer {
 
@@ -16,6 +16,7 @@ public class ModCommonInit implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Initializing Haunted Shoals");
 
+        ModItemGroups.registerModItemGroups();
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
     }

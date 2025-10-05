@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "haunted_shoals:block/haunted_planks",
+    "side": "haunted_shoals:block/haunted_planks",
+    "top": "haunted_shoals:block/haunted_planks"
+  }
+}

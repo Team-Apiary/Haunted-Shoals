@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "haunted_shoals:block/dark_haunted_pressure_plate"
+    },
+    "powered=true": {
+      "model": "haunted_shoals:block/dark_haunted_pressure_plate_down"
+    }
+  }
+}
