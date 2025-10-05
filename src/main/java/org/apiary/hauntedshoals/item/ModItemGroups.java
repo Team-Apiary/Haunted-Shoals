@@ -20,7 +20,12 @@ public class ModItemGroups {
                         entries.add(ModItems.CURSED_SEAGLASS);
                         entries.add(ModItems.CURSED_SEAGLASS_STAFF);
                         //CUTLASSES
+                        entries.add(ModItems.WOOD_CUTLASS);
+                        entries.add(ModItems.STONE_CUTLASS);
+                        entries.add(ModItems.IRON_CUTLASS);
+                        entries.add(ModItems.GOLD_CUTLASS);
                         entries.add(ModItems.DIAMOND_CUTLASS);
+                        entries.add(ModItems.NETHERITE_CUTLASS);
                         //HAUNTED WOODSET
                         entries.add(ModBlocks.HAUNTED_PLANKS);
                         entries.add(ModBlocks.HAUNTED_STAIRS);

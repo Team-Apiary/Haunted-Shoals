@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "haunted_shoals:item/stone_cutlass"
+  }
+}

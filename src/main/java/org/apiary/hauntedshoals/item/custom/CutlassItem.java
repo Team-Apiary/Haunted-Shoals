@@ -22,6 +22,7 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class CutlassItem extends ToolItem{
+
     public CutlassItem(ToolMaterial toolMaterial, Item.Settings settings) {
         super(toolMaterial, settings.component(DataComponentTypes.TOOL, CutlassItem.createToolComponent()));
     }
