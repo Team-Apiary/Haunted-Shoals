@@ -10,10 +10,10 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 import org.apiary.hauntedshoals.block.ModBlocks;
 import org.apiary.hauntedshoals.item.ModItems;
+import org.apiary.hauntedshoals.util.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -25,30 +25,30 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
         //HAUNTED WOODSET
-        //offerBarkBlockRecipe(exporter, ModBlocks.HAUNTED_LOG.asItem(), ModBlocks.HAUNTED_WOOD);
-        //offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_HAUNTED_LOG.asItem(), ModBlocks.STRIPPED_HAUNTED_WOOD);
-        //offerPlanksRecipe(exporter, ModBlocks.HAUNTED_PLANKS.asItem(), ModTags.Items.HAUNTED_LOGS, 4);
+        offerBarkBlockRecipe(exporter, ModBlocks.HAUNTED_WOOD.asItem(), ModBlocks.HAUNTED_LOG);
+        offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_HAUNTED_WOOD.asItem(), ModBlocks.STRIPPED_HAUNTED_LOG);
+        offerPlanksRecipe(exporter, ModBlocks.HAUNTED_PLANKS.asItem(), ModTags.Items.HAUNTED_LOGS, 4);
         offerStairsRecipe(exporter, ModBlocks.HAUNTED_STAIRS, ModBlocks.HAUNTED_PLANKS);
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.HAUNTED_SLAB, ModBlocks.HAUNTED_PLANKS);
         offerFenceRecipe(exporter, ModBlocks.HAUNTED_FENCE, ModBlocks.HAUNTED_PLANKS);
         offerFenceGateRecipe(exporter, ModBlocks.HAUNTED_FENCE_GATE, ModBlocks.HAUNTED_PLANKS);
-        //offerDoorRecipe(exporter, ModBlocks.HAUNTED_DOOR, ModBlocks.HAUNTED_PLANKS);
-        //offerTrapdoorRecipe(exporter, ModBlocks.HAUNTED_TRAPDOOR, ModBlocks.HAUNTED_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.HAUNTED_DOOR, ModBlocks.HAUNTED_PLANKS);
+        offerTrapdoorRecipe(exporter, ModBlocks.HAUNTED_TRAPDOOR, ModBlocks.HAUNTED_PLANKS);
         offerPressurePlateRecipe(exporter, ModBlocks.HAUNTED_PRESSURE_PLATE, ModBlocks.HAUNTED_PLANKS);
         offerShapelessRecipe(exporter, ModBlocks.HAUNTED_BUTTON, ModBlocks.HAUNTED_PLANKS, "haunted_button", 1);
         //offerSignRecipe(exporter, ModItems.HAUNTED_SIGN, ModBlocks.HAUNTED_PLANKS);
         //offerHangingSignRecipe(exporter, ModItems.HAUNTED_HANGING_SIGN, ModBlocks.STRIPPED_HAUNTED_LOG);
 
         //DARK HAUNTED WOODSET
-        //offerBarkBlockRecipe(exporter, ModBlocks.DARK_HAUNTED_LOG.asItem(), ModBlocks.DARK_HAUNTED_WOOD);
-        //offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_DARK_HAUNTED_LOG.asItem(), ModBlocks.STRIPPED_DARK_HAUNTED_WOOD);
-        //offerPlanksRecipe(exporter, ModBlocks.DARK_HAUNTED_PLANKS.asItem(), ModTags.Items.DARK_HAUNTED_LOGS, 4);
+        offerBarkBlockRecipe(exporter, ModBlocks.DARK_HAUNTED_WOOD.asItem(), ModBlocks.DARK_HAUNTED_LOG);
+        offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_DARK_HAUNTED_WOOD.asItem(), ModBlocks.STRIPPED_DARK_HAUNTED_LOG);
+        offerPlanksRecipe(exporter, ModBlocks.DARK_HAUNTED_PLANKS.asItem(), ModTags.Items.DARK_HAUNTED_LOGS, 4);
         offerStairsRecipe(exporter, ModBlocks.DARK_HAUNTED_STAIRS, ModBlocks.DARK_HAUNTED_PLANKS);
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.DARK_HAUNTED_SLAB, ModBlocks.DARK_HAUNTED_PLANKS);
         offerFenceRecipe(exporter, ModBlocks.DARK_HAUNTED_FENCE, ModBlocks.DARK_HAUNTED_PLANKS);
         offerFenceGateRecipe(exporter, ModBlocks.DARK_HAUNTED_FENCE_GATE, ModBlocks.DARK_HAUNTED_PLANKS);
-        //offerDoorRecipe(exporter, ModBlocks.DARK_HAUNTED_DOOR, ModBlocks.DARK_HAUNTED_PLANKS);
-        //offerTrapdoorRecipe(exporter, ModBlocks.DARK_HAUNTED_TRAPDOOR, ModBlocks.DARK_HAUNTED_PLANKS);
+        offerDoorRecipe(exporter, ModBlocks.DARK_HAUNTED_DOOR, ModBlocks.DARK_HAUNTED_PLANKS);
+        offerTrapdoorRecipe(exporter, ModBlocks.DARK_HAUNTED_TRAPDOOR, ModBlocks.DARK_HAUNTED_PLANKS);
         offerPressurePlateRecipe(exporter, ModBlocks.DARK_HAUNTED_PRESSURE_PLATE, ModBlocks.DARK_HAUNTED_PLANKS);
         offerShapelessRecipe(exporter, ModBlocks.DARK_HAUNTED_BUTTON, ModBlocks.DARK_HAUNTED_PLANKS, "dark_haunted_button", 1);
         //offerSignRecipe(exporter, ModItems.DARK_HAUNTED_SIGN, ModBlocks.DARK_HAUNTED_PLANKS);

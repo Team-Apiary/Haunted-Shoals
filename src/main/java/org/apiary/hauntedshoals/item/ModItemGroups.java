@@ -27,19 +27,31 @@ public class ModItemGroups {
                         entries.add(ModItems.DIAMOND_CUTLASS);
                         entries.add(ModItems.NETHERITE_CUTLASS);
                         //HAUNTED WOODSET
+                        entries.add(ModBlocks.HAUNTED_LOG);
+                        entries.add(ModBlocks.HAUNTED_WOOD);
+                        entries.add(ModBlocks.STRIPPED_HAUNTED_LOG);
+                        entries.add(ModBlocks.STRIPPED_HAUNTED_WOOD);
                         entries.add(ModBlocks.HAUNTED_PLANKS);
                         entries.add(ModBlocks.HAUNTED_STAIRS);
                         entries.add(ModBlocks.HAUNTED_SLAB);
                         entries.add(ModBlocks.HAUNTED_FENCE);
                         entries.add(ModBlocks.HAUNTED_FENCE_GATE);
+                        entries.add(ModBlocks.HAUNTED_DOOR);
+                        entries.add(ModBlocks.HAUNTED_TRAPDOOR);
                         entries.add(ModBlocks.HAUNTED_PRESSURE_PLATE);
                         entries.add(ModBlocks.HAUNTED_BUTTON);
                         //DARK HAUNTED WOODSET
+                        entries.add(ModBlocks.DARK_HAUNTED_LOG);
+                        entries.add(ModBlocks.DARK_HAUNTED_WOOD);
+                        entries.add(ModBlocks.STRIPPED_DARK_HAUNTED_LOG);
+                        entries.add(ModBlocks.STRIPPED_DARK_HAUNTED_WOOD);
                         entries.add(ModBlocks.DARK_HAUNTED_PLANKS);
                         entries.add(ModBlocks.DARK_HAUNTED_STAIRS);
                         entries.add(ModBlocks.DARK_HAUNTED_SLAB);
                         entries.add(ModBlocks.DARK_HAUNTED_FENCE);
                         entries.add(ModBlocks.DARK_HAUNTED_FENCE_GATE);
+                        entries.add(ModBlocks.DARK_HAUNTED_DOOR);
+                        entries.add(ModBlocks.DARK_HAUNTED_TRAPDOOR);
                         entries.add(ModBlocks.DARK_HAUNTED_PRESSURE_PLATE);
                         entries.add(ModBlocks.DARK_HAUNTED_BUTTON);
                     }).build());

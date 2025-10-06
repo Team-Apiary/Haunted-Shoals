@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "haunted_shoals:item/dark_haunted_door"
+  }
+}

@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import org.apiary.hauntedshoals.block.ModBlocks;
+import org.apiary.hauntedshoals.util.ModTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -15,9 +16,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        //LOGS
-        //LOG TAGS
-
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .addTag(ModTags.Blocks.HAUNTED_LOGS)
+                .addTag(ModTags.Blocks.DARK_HAUNTED_LOGS);
+        getOrCreateTagBuilder(ModTags.Blocks.HAUNTED_LOGS)
+                .add(ModBlocks.HAUNTED_LOG)
+                .add(ModBlocks.HAUNTED_WOOD)
+                .add(ModBlocks.STRIPPED_HAUNTED_LOG)
+                .add(ModBlocks.STRIPPED_HAUNTED_WOOD);
+        getOrCreateTagBuilder(ModTags.Blocks.DARK_HAUNTED_LOGS)
+                .add(ModBlocks.DARK_HAUNTED_LOG)
+                .add(ModBlocks.DARK_HAUNTED_WOOD)
+                .add(ModBlocks.STRIPPED_DARK_HAUNTED_LOG)
+                .add(ModBlocks.STRIPPED_DARK_HAUNTED_WOOD);
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(ModBlocks.HAUNTED_PLANKS)
                 .add(ModBlocks.DARK_HAUNTED_PLANKS);
@@ -33,14 +44,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.HAUNTED_FENCE_GATE)
                 .add(ModBlocks.DARK_HAUNTED_FENCE_GATE);
-         /*
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
-                .add(ModBlocks.HAUNTED_DOOR.asItem()
-                .add(ModBlocks.DARK_HAUNTED_DOOR.asItem());
+                .add(ModBlocks.HAUNTED_DOOR)
+                .add(ModBlocks.DARK_HAUNTED_DOOR);
         getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
-                .add(ModBlocks.HAUNTED_TRAPDOOR.asItem()
-                .add(ModBlocks.DARK_HAUNTED_TRAPDOOR.asItem());
-        */
+                .add(ModBlocks.HAUNTED_TRAPDOOR)
+                .add(ModBlocks.DARK_HAUNTED_TRAPDOOR);
         getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(ModBlocks.HAUNTED_PRESSURE_PLATE)
                 .add(ModBlocks.DARK_HAUNTED_PRESSURE_PLATE);
