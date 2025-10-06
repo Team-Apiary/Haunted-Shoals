@@ -1,11 +1,22 @@
 package org.apiary.hauntedshoals.init;
 
 import net.fabricmc.api.ModInitializer;
+import org.apiary.hauntedshoals.effect.ModEffects;
+import org.apiary.hauntedshoals.effect.potion.ModPotions;
 import org.apiary.hauntedshoals.item.ModItemGroups;
 import org.apiary.hauntedshoals.item.ModItems;
 import org.apiary.hauntedshoals.block.ModBlocks;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
+
+/*
+TODO
+Render Haunted Effect
+Cutlass sidestep and lunge
+Haunted Block Interaction
+
+Biome Generation
+ */
 
 public class ModCommonInit implements ModInitializer {
 
@@ -19,5 +30,7 @@ public class ModCommonInit implements ModInitializer {
         ModItemGroups.registerModItemGroups();
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
+        ModEffects.registerModEffects();
+        ModPotions.registerModPotions();
     }
 }

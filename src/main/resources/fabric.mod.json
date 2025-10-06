@@ -3,8 +3,13 @@
   "id": "haunted_shoals",
   "version": "${version}",
   "name": "Haunted Shoals",
-  "description": "",
-  "authors": [],
+  "description": "Explore the new Haunted Shoals biome, with shipwrecks a plenty and a new ghost fleet to take on.",
+  "authors": [
+    "TheBlindBandit6",
+    "Minico",
+    "smiileyf4ce",
+    "BluePixelNinja"
+  ],
   "contact": {},
   "license": "MIT",
   "icon": "assets/haunted_shoals/icon.png",

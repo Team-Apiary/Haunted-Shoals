@@ -27,5 +27,17 @@
   "block.haunted_shoals.dark_haunted_pressure_plate": "Dark Haunted Pressure Plate",
   "block.haunted_shoals.dark_haunted_button": "Dark Haunted Button",
 
-  "biome.haunted_shoals.haunted_shoals": "Haunted Shoals"
+  "biome.haunted_shoals.haunted_shoals": "Haunted Shoals",
+
+  "effect.haunted_shoals.haunted": "Haunted",
+
+  "item.minecraft.potion.effect.haunted_potion": "Potion of Haunting",
+  "item.minecraft.splash_potion.effect.haunted_potion": "Splash Potion of Haunting",
+  "item.minecraft.lingering_potion.effect.haunted_potion": "Lingering Potion of Haunting",
+  "item.minecraft.tipped_arrow.effect.haunted_potion": "Arrow of Haunting",
+
+  "item.minecraft.potion.effect.long_haunted_potion": "Potion of Haunting",
+  "item.minecraft.splash_potion.effect.long_haunted_potion": "Splash Potion of Haunting",
+  "item.minecraft.lingering_potion.effect.long_haunted_potion": "Lingering Potion of Haunting",
+  "item.minecraft.tipped_arrow.effect.long_haunted_potion": "Arrow of Haunting"
 }

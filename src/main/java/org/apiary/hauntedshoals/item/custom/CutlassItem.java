@@ -70,4 +70,14 @@ public class CutlassItem extends ToolItem{
         user.setCurrentHand(hand);
         return TypedActionResult.consume(itemStack);
     }
+
+    /*
+    public static void applyDirectionalPush(ServerPlayerEntity player) {
+        Vec3d look = player.getRotationVec(1.0F);
+        double strength = 0.8;
+
+        player.addVelocity(look.x * strength, 0.5, look.z * strength);
+        player.velocityModified = true;
+    }
+     */
 }
