@@ -23,6 +23,9 @@
     ],
     "main": [
       "org.apiary.hauntedshoals.init.ModCommonInit"
+    ],
+    "terrablender": [
+      "org.apiary.hauntedshoals.init.ModCommonInit"
     ]
   },
   "mixins": [

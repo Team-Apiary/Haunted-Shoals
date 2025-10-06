@@ -1,0 +1,32 @@
+package org.apiary.hauntedshoals.terrablender;
+
+import com.mojang.datafixers.util.Pair;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.util.Identifier;
+import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.BiomeKeys;
+import net.minecraft.world.biome.source.util.MultiNoiseUtil;
+import terrablender.api.Region;
+import terrablender.api.RegionType;
+
+import java.util.function.Consumer;
+
+public class ModOverworldRegion extends Region {
+    public ModOverworldRegion(Identifier name, int weight) {
+        super(name, RegionType.OVERWORLD, weight);
+    }
+
+    @Override
+    public void addBiomes(Registry<Biome> registry, Consumer<Pair<MultiNoiseUtil.NoiseHypercube, RegistryKey<Biome>>> mapper) {
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.LUKEWARM_OCEAN, ModBiomes.HAUNTED_SHOALS));
+
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.OCEAN, ModBiomes.HAUNTED_SHOALS));
+
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.COLD_OCEAN, ModBiomes.HAUNTED_SHOALS));
+
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.BEACH, ModBiomes.HAUNTED_SHOALS));
+
+        this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> modifiedVanillaOverworldBuilder.replaceBiome(BiomeKeys.STONY_SHORE, ModBiomes.HAUNTED_SHOALS));
+    }
+}
