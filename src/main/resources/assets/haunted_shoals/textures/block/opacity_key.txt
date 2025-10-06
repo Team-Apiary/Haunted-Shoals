@@ -1,0 +1,2 @@
+Base Texture = 60%
+Emissive Texture = 10%

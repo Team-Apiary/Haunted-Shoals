@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "minecraft:chain"
+    },
+    "F": {
+      "tag": "minecraft:soul_fire_base_blocks"
+    },
+    "S": {
+      "item": "haunted_shoals:cursed_seaglass"
+    }
+  },
+  "pattern": [
+    "CSC",
+    "FBF",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "haunted_shoals:cursed_seaglass_staff"
+  }
+}

@@ -8,13 +8,14 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import org.apiary.hauntedshoals.init.ModCommonInit;
 import org.apiary.hauntedshoals.item.custom.CursedSeaglassItem;
+import org.apiary.hauntedshoals.item.custom.CursedSeaglassStaffItem;
 import org.apiary.hauntedshoals.item.custom.CutlassItem;
 
 public class ModItems {
 
     //CURSED SEAGLASS
     public static final Item CURSED_SEAGLASS = registerItem("cursed_seaglass", new CursedSeaglassItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
-    public static final Item CURSED_SEAGLASS_STAFF = registerItem("cursed_seaglass_staff", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final Item CURSED_SEAGLASS_STAFF = registerItem("cursed_seaglass_staff", new CursedSeaglassStaffItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
     //CUTLASSES
     public static final Item WOOD_CUTLASS = registerItem("wood_cutlass", new CutlassItem(ToolMaterials.WOOD,
             new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.WOOD, 1.0f, -1.8f))));

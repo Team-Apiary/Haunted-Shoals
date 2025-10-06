@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "haunted_button",
+  "ingredients": [
+    {
+      "item": "haunted_shoals:haunted_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "haunted_shoals:haunted_button"
+  }
+}

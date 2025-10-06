@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "cutlasses",
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  #",
+    " # ",
+    "T  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "haunted_shoals:diamond_cutlass"
+  }
+}

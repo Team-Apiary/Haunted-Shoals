@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-05T23:11:56.1892516	Haunted Shoals/Model Definitions
+// 1.21.1	2025-10-06T16:55:17.9764406	Haunted Shoals/Model Definitions
 94f295f9e3c1f7e60a65287419a35096cba2ff48 assets\haunted_shoals\models\block\haunted_fence_gate_wall_open.json
 0321484630ec2fd0756845137e8c311166836643 assets\haunted_shoals\models\block\dark_haunted_button_pressed.json
 4d0cb30f0c784101bb1572639c60d39f4beebf4d assets\haunted_shoals\models\block\haunted_fence_gate.json
@@ -46,8 +46,8 @@ d1bf8265e8b17c8caad68f407890cbe09c1ccf9b assets\haunted_shoals\models\item\dark_
 22d46157321c0a519dc03b87d8f663daf9e33cfd assets\haunted_shoals\models\item\dark_haunted_slab.json
 388a3d73faad2d307a08f04012d9bc9c6da98932 assets\haunted_shoals\models\item\haunted_fence_gate.json
 67aca1246be2fd260d4309cd1e32598180499552 assets\haunted_shoals\models\block\dark_haunted_fence_gate_wall_open.json
-d01e92dd319a6590ae4b9c444d91e1ae69699766 assets\haunted_shoals\models\item\dark_haunted_planks.json
 ae9340f935dd2183cda357b2b7de94961dabc072 assets\haunted_shoals\models\block\dark_haunted_pressure_plate.json
+d01e92dd319a6590ae4b9c444d91e1ae69699766 assets\haunted_shoals\models\item\dark_haunted_planks.json
 4c935a699550950bd1d2f13a1d97725d1c01f1da assets\haunted_shoals\models\block\dark_haunted_slab.json
 66f961c845467f4689c57bfd47b7f4033bed32c5 assets\haunted_shoals\models\block\dark_haunted_stairs.json
 bfb30cf24fe357c522f66d6cfc4f4fd6145c1c8b assets\haunted_shoals\models\item\haunted_pressure_plate.json

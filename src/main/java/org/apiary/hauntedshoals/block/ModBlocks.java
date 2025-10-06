@@ -10,21 +10,21 @@ import org.apiary.hauntedshoals.init.ModCommonInit;
 
 public class ModBlocks {
     //HAUNTED WOODSET
-    public static final Block HAUNTED_PLANKS = registerBlock("haunted_planks", new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.LIME).nonOpaque().luminance(state -> 1)));
-    public static final Block HAUNTED_STAIRS = registerBlock("haunted_stairs", new StairsBlock(ModBlocks.HAUNTED_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.LIME).nonOpaque().luminance(state -> 1)));
-    public static final Block HAUNTED_SLAB = registerBlock("haunted_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB).mapColor(MapColor.LIME).nonOpaque().luminance(state -> 1)));
-    public static final Block HAUNTED_FENCE = registerBlock("haunted_fence", new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE).mapColor(MapColor.LIME).nonOpaque().luminance(state -> 1)));
-    public static final Block HAUNTED_FENCE_GATE = registerBlock("haunted_fence_gate", new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.LIME).nonOpaque().luminance(state -> 1)));
-    public static final Block HAUNTED_PRESSURE_PLATE = registerBlock("haunted_pressure_plate", new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.LIME).nonOpaque().luminance(state -> 1)));
-    public static final Block HAUNTED_BUTTON = registerBlock("haunted_button", new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.LIME).nonOpaque().luminance(state -> 1)));
+    public static final Block HAUNTED_PLANKS = registerBlock("haunted_planks", new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.LIME).nonOpaque()));
+    public static final Block HAUNTED_STAIRS = registerBlock("haunted_stairs", new StairsBlock(ModBlocks.HAUNTED_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.LIME).nonOpaque()));
+    public static final Block HAUNTED_SLAB = registerBlock("haunted_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_SLAB).mapColor(MapColor.LIME).nonOpaque()));
+    public static final Block HAUNTED_FENCE = registerBlock("haunted_fence", new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE).mapColor(MapColor.LIME).nonOpaque()));
+    public static final Block HAUNTED_FENCE_GATE = registerBlock("haunted_fence_gate", new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.LIME).nonOpaque()));
+    public static final Block HAUNTED_PRESSURE_PLATE = registerBlock("haunted_pressure_plate", new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.LIME).nonOpaque()));
+    public static final Block HAUNTED_BUTTON = registerBlock("haunted_button", new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.LIME).nonOpaque()));
     //DARK HAUNTED WOODSET
-    public static final Block DARK_HAUNTED_PLANKS = registerBlock("dark_haunted_planks", new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.GREEN).nonOpaque().luminance(state -> 1)));
-    public static final Block DARK_HAUNTED_STAIRS = registerBlock("dark_haunted_stairs", new StairsBlock(ModBlocks.DARK_HAUNTED_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.GREEN).nonOpaque().luminance(state -> 1)));
-    public static final Block DARK_HAUNTED_SLAB = registerBlock("dark_haunted_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.GREEN).nonOpaque().luminance(state -> 1)));
-    public static final Block DARK_HAUNTED_FENCE = registerBlock("dark_haunted_fence", new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE).mapColor(MapColor.GREEN).nonOpaque().luminance(state -> 1)));
-    public static final Block DARK_HAUNTED_FENCE_GATE = registerBlock("dark_haunted_fence_gate", new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.GREEN).nonOpaque().luminance(state -> 1)));
-    public static final Block DARK_HAUNTED_PRESSURE_PLATE = registerBlock("dark_haunted_pressure_plate", new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.GREEN).nonOpaque().luminance(state -> 1)));
-    public static final Block DARK_HAUNTED_BUTTON = registerBlock("dark_haunted_button", new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.GREEN).nonOpaque().luminance(state -> 1)));
+    public static final Block DARK_HAUNTED_PLANKS = registerBlock("dark_haunted_planks", new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).mapColor(MapColor.GREEN).nonOpaque()));
+    public static final Block DARK_HAUNTED_STAIRS = registerBlock("dark_haunted_stairs", new StairsBlock(ModBlocks.DARK_HAUNTED_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.GREEN).nonOpaque()));
+    public static final Block DARK_HAUNTED_SLAB = registerBlock("dark_haunted_slab", new SlabBlock(AbstractBlock.Settings.copy(Blocks.OAK_STAIRS).mapColor(MapColor.GREEN).nonOpaque()));
+    public static final Block DARK_HAUNTED_FENCE = registerBlock("dark_haunted_fence", new FenceBlock(AbstractBlock.Settings.copy(Blocks.OAK_FENCE).mapColor(MapColor.GREEN).nonOpaque()));
+    public static final Block DARK_HAUNTED_FENCE_GATE = registerBlock("dark_haunted_fence_gate", new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.GREEN).nonOpaque()));
+    public static final Block DARK_HAUNTED_PRESSURE_PLATE = registerBlock("dark_haunted_pressure_plate", new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.GREEN).nonOpaque()));
+    public static final Block DARK_HAUNTED_BUTTON = registerBlock("dark_haunted_button", new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_FENCE_GATE).mapColor(MapColor.GREEN).nonOpaque()));
 
     //Register Methods
     private static Block registerBlock(String name, Block block) {

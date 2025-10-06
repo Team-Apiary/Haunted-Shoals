@@ -25,7 +25,7 @@ public class ModCommonInit implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("Initializing Haunted Shoals");
+        LOGGER.info("Initializing the ghost fleet");
 
         ModItemGroups.registerModItemGroups();
         ModBlocks.registerModBlocks();
