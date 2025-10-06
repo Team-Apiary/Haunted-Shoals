@@ -16,13 +16,13 @@ import terrablender.api.TerraBlenderApi;
 
 /*
 TODO
+Wraith Entity
+Haunted Block Interaction
 Render Haunted Effect
 Cutlass sidestep and lunge
-Haunted Block Interaction
-
-Biome Generation
 
 Complete Woodsets
+Ghost Fleet Structure
  */
 
 public class ModCommonInit implements ModInitializer, TerraBlenderApi{
