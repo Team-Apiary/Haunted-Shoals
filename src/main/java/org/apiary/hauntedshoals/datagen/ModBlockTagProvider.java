@@ -2,6 +2,7 @@ package org.apiary.hauntedshoals.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import org.apiary.hauntedshoals.block.ModBlocks;
@@ -70,5 +71,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModItems.HAUNTED_HANGING_SIGN)
                 .add(ModItems.DARK_HAUNTED_HANGING_SIGN);
         */
+        getOrCreateTagBuilder(ModTags.Blocks.GHOST_CORAL_BLOCKS)
+                .add(ModBlocks.GHOST_CORAL_BLOCK);
+
+        getOrCreateTagBuilder(ModTags.Blocks.GHOST_CORAL_PLANTS)
+                .add(ModBlocks.GHOST_CORAL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.GHOST_CORALS)
+                .add(ModBlocks.GHOST_CORAL_FAN);
+
+        getOrCreateTagBuilder(ModTags.Blocks.GHOST_WALL_CORALS)
+                .add(ModBlocks.GHOST_CORAL_WALL_FAN);
     }
 }

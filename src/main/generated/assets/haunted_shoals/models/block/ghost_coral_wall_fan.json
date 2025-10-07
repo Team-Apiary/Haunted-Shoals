@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/coral_wall_fan",
+  "textures": {
+    "fan": "haunted_shoals:block/ghost_coral_fan"
+  }
+}

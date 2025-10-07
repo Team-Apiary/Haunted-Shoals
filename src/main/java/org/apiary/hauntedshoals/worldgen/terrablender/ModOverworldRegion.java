@@ -1,4 +1,4 @@
-package org.apiary.hauntedshoals.terrablender;
+package org.apiary.hauntedshoals.worldgen.terrablender;
 
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.registry.Registry;

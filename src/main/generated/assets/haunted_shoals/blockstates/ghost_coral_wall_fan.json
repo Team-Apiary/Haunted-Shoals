@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "haunted_shoals:block/ghost_coral_wall_fan",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "haunted_shoals:block/ghost_coral_wall_fan"
+    },
+    "facing=south": {
+      "model": "haunted_shoals:block/ghost_coral_wall_fan",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "haunted_shoals:block/ghost_coral_wall_fan",
+      "y": 270
+    }
+  }
+}

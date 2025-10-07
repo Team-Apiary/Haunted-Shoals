@@ -54,6 +54,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DARK_HAUNTED_TRAPDOOR);
                         entries.add(ModBlocks.DARK_HAUNTED_PRESSURE_PLATE);
                         entries.add(ModBlocks.DARK_HAUNTED_BUTTON);
+                        //GHOST CORAL
+                        entries.add(ModBlocks.GHOST_CORAL);
+                        entries.add(ModBlocks.DEAD_GHOST_CORAL);
+                        entries.add(ModBlocks.GHOST_CORAL_BLOCK);
+                        entries.add(ModBlocks.DEAD_GHOST_CORAL_BLOCK);
+                        entries.add(ModBlocks.GHOST_CORAL_FAN);
+                        entries.add(ModBlocks.DEAD_GHOST_CORAL_FAN);
+                        entries.add(ModBlocks.GHOST_CORAL_WALL_FAN);
+                        entries.add(ModBlocks.DEAD_GHOST_CORAL_WALL_FAN);
                     }).build());
 
     public static void registerModItemGroups() {

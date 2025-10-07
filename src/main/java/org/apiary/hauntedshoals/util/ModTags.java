@@ -13,6 +13,12 @@ public class ModTags {
         public static final TagKey<Block> HAUNTED_LOGS = createTag("haunted_logs");
         public static final TagKey<Block> DARK_HAUNTED_LOGS = createTag("dark_haunted_logs");
 
+        public static final TagKey<Block> GHOST_CORAL_BLOCKS = createTag("ghost_coral");
+        public static final TagKey<Block> GHOST_CORAL_PLANTS = createTag("ghost_coral");
+
+        public static final TagKey<Block> GHOST_CORALS = createTag("ghost_coral");
+        public static final TagKey<Block> GHOST_WALL_CORALS = createTag("ghost_wall_coral");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(ModCommonInit.MOD_ID, name));
         }

@@ -51,5 +51,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         //addDrop(ModBlocks.DARK_HAUNTED_WALL_SIGN, ModItems.HAUNTED_SIGN);
         //addDrop(ModBlocks.DARK_HAUNTED_HANGING_SIGN, ModItems.HAUNTED_HANGING_SIGN);
         //addDrop(ModBlocks.DARK_HAUNTED_WALL_HANGING_SIGN, ModItems.HAUNTED_HANGING_SIGN);
+
+        addDropWithSilkTouch(ModBlocks.GHOST_CORAL);
+        addDropWithSilkTouch(ModBlocks.DEAD_GHOST_CORAL);
+        addDropWithSilkTouch(ModBlocks.GHOST_CORAL_BLOCK);
+        addDropWithSilkTouch(ModBlocks.DEAD_GHOST_CORAL_BLOCK);
+        addDropWithSilkTouch(ModBlocks.GHOST_CORAL_FAN);
+        addDropWithSilkTouch(ModBlocks.DEAD_GHOST_CORAL_FAN);
+        addDropWithSilkTouch(ModBlocks.GHOST_CORAL_WALL_FAN);
+        addDropWithSilkTouch(ModBlocks.DEAD_GHOST_CORAL_WALL_FAN);
     }
 }

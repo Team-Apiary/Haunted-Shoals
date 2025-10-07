@@ -1,4 +1,4 @@
-package org.apiary.hauntedshoals.terrablender;
+package org.apiary.hauntedshoals.worldgen.terrablender;
 
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;

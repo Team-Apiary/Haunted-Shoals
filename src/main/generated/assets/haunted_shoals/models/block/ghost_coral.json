@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "haunted_shoals:block/ghost_coral"
+  }
+}

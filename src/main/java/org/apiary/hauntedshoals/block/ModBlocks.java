@@ -38,6 +38,19 @@ public class ModBlocks {
     public static final Block DARK_HAUNTED_PRESSURE_PLATE = registerBlock("dark_haunted_pressure_plate", new PressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.GREEN).nonOpaque()));
     public static final Block DARK_HAUNTED_BUTTON = registerBlock("dark_haunted_button", new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON).mapColor(MapColor.GREEN).nonOpaque()));
 
+    public static final Block DEAD_GHOST_CORAL_BLOCK = registerBlock("dead_ghost_coral_block", new Block(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_BLOCK).mapColor(MapColor.WHITE)));
+    public static final Block GHOST_CORAL_BLOCK = registerBlock("ghost_coral_block", new CoralBlockBlock(ModBlocks.DEAD_GHOST_CORAL_BLOCK, AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_BLOCK).mapColor(MapColor.WHITE)));
+
+    public static final Block DEAD_GHOST_CORAL = registerBlock("dead_ghost_coral", new DeadCoralBlock(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL).mapColor(MapColor.WHITE)));
+    public static final Block GHOST_CORAL = registerBlock("ghost_coral", new CoralBlock(ModBlocks.DEAD_GHOST_CORAL, AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL).mapColor(MapColor.WHITE)));
+
+    public static final Block DEAD_GHOST_CORAL_FAN = registerBlock("dead_ghost_coral_fan", new DeadCoralFanBlock(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_FAN).mapColor(MapColor.WHITE)));
+    public static final Block GHOST_CORAL_FAN = registerBlock("ghost_coral_fan", new CoralFanBlock(ModBlocks.DEAD_GHOST_CORAL_FAN, AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_FAN).mapColor(MapColor.WHITE)));
+
+    public static final Block DEAD_GHOST_CORAL_WALL_FAN = registerBlock("dead_ghost_coral_wall_fan", new DeadCoralWallFanBlock(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_FAN).mapColor(MapColor.WHITE)));
+    public static final Block GHOST_CORAL_WALL_FAN = registerBlock("ghost_coral_wall_fan", new CoralWallFanBlock(ModBlocks.DEAD_GHOST_CORAL_WALL_FAN, AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_FAN).mapColor(MapColor.WHITE)));
+
+
     //Register Methods
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

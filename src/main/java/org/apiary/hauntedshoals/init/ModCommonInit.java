@@ -8,7 +8,8 @@ import org.apiary.hauntedshoals.effect.potion.ModPotions;
 import org.apiary.hauntedshoals.item.ModItemGroups;
 import org.apiary.hauntedshoals.item.ModItems;
 import org.apiary.hauntedshoals.block.ModBlocks;
-import org.apiary.hauntedshoals.terrablender.ModOverworldRegion;
+import org.apiary.hauntedshoals.worldgen.feature.ModFeatures;
+import org.apiary.hauntedshoals.worldgen.terrablender.ModOverworldRegion;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 import terrablender.api.Regions;
@@ -20,6 +21,9 @@ Wraith Entity
 Haunted Block Interaction
 Render Haunted Effect
 Cutlass sidestep and lunge
+Custom Coral Features since existing ones are hardcoded
+
+package net.minecraft.world.gen.feature.CoralFeature;
 
 Complete Woodsets
 Ghost Fleet Structure
@@ -37,10 +41,12 @@ public class ModCommonInit implements ModInitializer, TerraBlenderApi{
         ModItemGroups.registerModItemGroups();
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
+
         ModEffects.registerModEffects();
         ModPotions.registerModPotions();
         ModPotionRecipes.recipeRegister();
 
+        ModFeatures.registerModFeatures();
     }
 
     @Override
