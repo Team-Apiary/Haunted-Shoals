@@ -72,16 +72,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         */
         getOrCreateTagBuilder(ModTags.Blocks.GHOST_CORAL_BLOCKS)
                 .add(ModBlocks.GHOST_CORAL_BLOCK);
-
         getOrCreateTagBuilder(ModTags.Blocks.GHOST_CORAL_PLANTS)
                 .add(ModBlocks.GHOST_CORAL);
-
         getOrCreateTagBuilder(ModTags.Blocks.GHOST_CORALS)
                 .add(ModBlocks.GHOST_CORAL_FAN);
-
         getOrCreateTagBuilder(ModTags.Blocks.GHOST_WALL_CORALS)
                 .add(ModBlocks.GHOST_CORAL_WALL_FAN);
-
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.GHOST_CORAL_BLOCK)
                 .add(ModBlocks.GHOST_CORAL)

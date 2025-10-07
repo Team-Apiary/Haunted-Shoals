@@ -38,18 +38,15 @@ public class ModCommonInit implements ModInitializer, TerraBlenderApi{
         ModItemGroups.registerModItemGroups();
         ModBlocks.registerModBlocks();
         ModItems.registerModItems();
-
         ModEffects.registerModEffects();
         ModPotions.registerModPotions();
         ModPotionRecipes.recipeRegister();
-
         ModFeatures.registerModFeatures();
     }
 
     @Override
     public void onTerraBlenderInitialized()
     {
-        // Weights are kept intentionally low as we add minimal biomes
         Regions.register(new ModOverworldRegion(Identifier.of(MOD_ID, "overworld"), 2));
     }
 }

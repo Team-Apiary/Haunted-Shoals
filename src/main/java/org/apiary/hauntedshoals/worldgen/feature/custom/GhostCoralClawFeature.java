@@ -1,6 +1,5 @@
 package org.apiary.hauntedshoals.worldgen.feature.custom;
 
-import com.mojang.serialization.Codec;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.Util;
 import net.minecraft.util.math.BlockPos;

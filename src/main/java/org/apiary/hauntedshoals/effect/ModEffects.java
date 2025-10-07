@@ -13,7 +13,6 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> HAUNTED = registerStatusEffect("haunted",
             new HauntedEffect(StatusEffectCategory.NEUTRAL, 0x36ebab));
 
-
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(ModCommonInit.MOD_ID, name), statusEffect);
     }

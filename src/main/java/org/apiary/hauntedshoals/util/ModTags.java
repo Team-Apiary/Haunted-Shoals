@@ -10,12 +10,12 @@ import org.apiary.hauntedshoals.init.ModCommonInit;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> HAUNTED_BLOCKS = createTag("haunted_blocks");
+        //HAUNTED WOODSETS
         public static final TagKey<Block> HAUNTED_LOGS = createTag("haunted_logs");
         public static final TagKey<Block> DARK_HAUNTED_LOGS = createTag("dark_haunted_logs");
-
+        //GHOST CORAL
         public static final TagKey<Block> GHOST_CORAL_BLOCKS = createTag("ghost_coral");
         public static final TagKey<Block> GHOST_CORAL_PLANTS = createTag("ghost_coral");
-
         public static final TagKey<Block> GHOST_CORALS = createTag("ghost_coral");
         public static final TagKey<Block> GHOST_WALL_CORALS = createTag("ghost_wall_coral");
 
@@ -26,9 +26,10 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> HAUNTED_BLOCKS = createTag("haunted_blocks");
+        //HAUNTED WOODSETS
         public static final TagKey<Item> HAUNTED_LOGS = createTag("haunted_logs");
         public static final TagKey<Item> DARK_HAUNTED_LOGS = createTag("dark_haunted_logs");
-
+        //CUTLASSES
         public static final TagKey<Item> CUTLASSES = createTag("cutlasses");
 
         private static TagKey<Item> createTag(String name) {

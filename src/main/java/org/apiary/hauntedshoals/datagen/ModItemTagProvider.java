@@ -72,10 +72,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.GOLD_CUTLASS)
                 .add(ModItems.DIAMOND_CUTLASS)
                 .add(ModItems.NETHERITE_CUTLASS);
-
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .addTag(ModTags.Items.CUTLASSES);
-
         getOrCreateTagBuilder(ItemTags.PIGLIN_LOVED)
                 .add(ModItems.GOLD_CUTLASS);
     }

@@ -32,7 +32,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         //addDrop(ModBlocks.HAUNTED_WALL_SIGN, ModItems.HAUNTED_SIGN);
         //addDrop(ModBlocks.HAUNTED_HANGING_SIGN, ModItems.HAUNTED_HANGING_SIGN);
         //addDrop(ModBlocks.HAUNTED_WALL_HANGING_SIGN, ModItems.HAUNTED_HANGING_SIGN);
-
         //DARK HAUNTED WOODSET
         addDrop(ModBlocks.DARK_HAUNTED_LOG);
         addDrop(ModBlocks.DARK_HAUNTED_WOOD);
@@ -51,7 +50,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         //addDrop(ModBlocks.DARK_HAUNTED_WALL_SIGN, ModItems.HAUNTED_SIGN);
         //addDrop(ModBlocks.DARK_HAUNTED_HANGING_SIGN, ModItems.HAUNTED_HANGING_SIGN);
         //addDrop(ModBlocks.DARK_HAUNTED_WALL_HANGING_SIGN, ModItems.HAUNTED_HANGING_SIGN);
-
+        //GHOST CORAL
         addDropWithSilkTouch(ModBlocks.GHOST_CORAL);
         addDropWithSilkTouch(ModBlocks.DEAD_GHOST_CORAL);
         addDropWithSilkTouch(ModBlocks.GHOST_CORAL_BLOCK);

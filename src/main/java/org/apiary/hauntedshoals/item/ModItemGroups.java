@@ -66,6 +66,6 @@ public class ModItemGroups {
                     }).build());
 
     public static void registerModItemGroups() {
-        //Impillagers.LOGGER.info("Registering Item Groups for " + Impillagers.MOD_ID);
+        //ModCommonInit.LOGGER.info("Registering Item Groups for " + ModCommonInit.MOD_ID);
     }
 }

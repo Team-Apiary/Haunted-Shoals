@@ -47,7 +47,6 @@ public class ModBlocks {
     public static final Block DEAD_GHOST_CORAL_WALL_FAN = registerBlock("dead_ghost_coral_wall_fan", new DeadCoralWallFanBlock(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_FAN).mapColor(MapColor.WHITE)));
     public static final Block GHOST_CORAL_WALL_FAN = registerBlock("ghost_coral_wall_fan", new CoralWallFanBlock(ModBlocks.DEAD_GHOST_CORAL_WALL_FAN, AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_FAN).mapColor(MapColor.WHITE)));
 
-
     //Register Methods
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

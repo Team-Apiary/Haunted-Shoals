@@ -37,7 +37,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.DARK_HAUNTED_TRAPDOOR);
         dark_haunted_planks_pool.pressurePlate(ModBlocks.DARK_HAUNTED_PRESSURE_PLATE);
         dark_haunted_planks_pool.button(ModBlocks.DARK_HAUNTED_BUTTON);
-
+        //GHOST CORAL
         blockStateModelGenerator.registerCoral(
                 ModBlocks.GHOST_CORAL, ModBlocks.DEAD_GHOST_CORAL,
                 ModBlocks.GHOST_CORAL_BLOCK, ModBlocks.DEAD_GHOST_CORAL_BLOCK,

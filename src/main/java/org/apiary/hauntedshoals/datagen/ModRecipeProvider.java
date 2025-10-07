@@ -38,7 +38,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapelessRecipe(exporter, ModBlocks.HAUNTED_BUTTON, ModBlocks.HAUNTED_PLANKS, "haunted_button", 1);
         //offerSignRecipe(exporter, ModItems.HAUNTED_SIGN, ModBlocks.HAUNTED_PLANKS);
         //offerHangingSignRecipe(exporter, ModItems.HAUNTED_HANGING_SIGN, ModBlocks.STRIPPED_HAUNTED_LOG);
-
         //DARK HAUNTED WOODSET
         offerBarkBlockRecipe(exporter, ModBlocks.DARK_HAUNTED_WOOD.asItem(), ModBlocks.DARK_HAUNTED_LOG);
         offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_DARK_HAUNTED_WOOD.asItem(), ModBlocks.STRIPPED_DARK_HAUNTED_LOG);
@@ -53,14 +52,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerShapelessRecipe(exporter, ModBlocks.DARK_HAUNTED_BUTTON, ModBlocks.DARK_HAUNTED_PLANKS, "dark_haunted_button", 1);
         //offerSignRecipe(exporter, ModItems.DARK_HAUNTED_SIGN, ModBlocks.DARK_HAUNTED_PLANKS);
         //offerHangingSignRecipe(exporter, ModItems.DARK_HAUNTED_HANGING_SIGN, ModBlocks.STRIPPED_DARK_HAUNTED_LOG);
-
         //CUTLASSES
         offerCutlassRecipe(exporter, ModItems.IRON_CUTLASS, Items.IRON_INGOT, "iron");
         offerCutlassRecipe(exporter, ModItems.GOLD_CUTLASS, Items.GOLD_INGOT, "gold");
         offerCutlassRecipe(exporter, ModItems.DIAMOND_CUTLASS, Items.DIAMOND, "diamond");
-
         offerNetheriteUpgradeRecipe(exporter, ModItems.DIAMOND_CUTLASS, RecipeCategory.COMBAT, ModItems.NETHERITE_CUTLASS);
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.WOOD_CUTLASS, 1)
                 .input('T', Items.STICK)
                 .input('#', ItemTags.PLANKS)
@@ -70,7 +66,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion("oak_planks", conditionsFromItem(Items.OAK_PLANKS))
                 .group("cutlasses")
                 .offerTo(exporter, "wood_cutlass");
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.STONE_CUTLASS, 1)
                 .input('T', Items.STICK)
                 .input('#', ItemTags.STONE_CRAFTING_MATERIALS)
@@ -80,7 +75,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion("cobblestone", conditionsFromItem(Items.COBBLESTONE))
                 .group("cutlasses")
                 .offerTo(exporter, "stone_cutlass");
-
         //CURSED SEAGLASS STAFF
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CURSED_SEAGLASS_STAFF, 1)
                 .input('B', Items.STICK)

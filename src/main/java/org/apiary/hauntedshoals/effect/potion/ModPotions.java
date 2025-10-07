@@ -14,7 +14,6 @@ public class ModPotions {
     public static final RegistryEntry<Potion> LONG_HAUNTED_POTION = registerPotion("long_haunted_potion",
             new Potion(new StatusEffectInstance(org.apiary.hauntedshoals.effect.ModEffects.HAUNTED, 9600, 0)));
 
-
     private static RegistryEntry<Potion> registerPotion(String name, Potion potion) {
         return Registry.registerReference(Registries.POTION, Identifier.of(ModCommonInit.MOD_ID, name), potion);
     }
