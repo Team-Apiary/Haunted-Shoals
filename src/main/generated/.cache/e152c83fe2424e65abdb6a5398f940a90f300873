@@ -1,9 +1,10 @@
-// 1.21.1	2025-10-07T18:15:46.3267139	Haunted Shoals/Tags for minecraft:block
+// 1.21.1	2025-10-08T00:09:26.0387191	Haunted Shoals/Tags for minecraft:block
 20d971595635db9512f78755f50b5c44e4f4b457 data\minecraft\tags\block\wooden_trapdoors.json
 eee723ce1cf89235dfaf757df198b28bbaf4958e data\haunted_shoals\tags\block\haunted_logs.json
 3cc6e00e6bed347c37ffe89230a04bd3ea50b1f6 data\minecraft\tags\block\wooden_buttons.json
 a6eeba7c0785e21811204d5998f83ef93446d964 data\minecraft\tags\block\wooden_fences.json
 face407f3c000bbc73290795ec0933df4945815c data\haunted_shoals\tags\block\ghost_coral.json
+1ed05cc9c9cbb4c16e9cabf006fc130f967280db data\minecraft\tags\block\mineable\pickaxe.json
 40292a1b4d0c086aeb55b7717f58531d23273c8d data\minecraft\tags\block\logs_that_burn.json
 d6983e309188ef3084016b09364700603db97c28 data\minecraft\tags\block\wooden_pressure_plates.json
 fa43454e0ecda304197eb946a00e1b61e70a5d0b data\minecraft\tags\block\fence_gates.json

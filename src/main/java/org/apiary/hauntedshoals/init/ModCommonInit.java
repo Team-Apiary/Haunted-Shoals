@@ -21,9 +21,6 @@ Wraith Entity
 Haunted Block Interaction
 Render Haunted Effect
 Cutlass sidestep and lunge
-Custom Coral Features since existing ones are hardcoded
-
-package net.minecraft.world.gen.feature.CoralFeature;
 
 Complete Woodsets
 Ghost Fleet Structure

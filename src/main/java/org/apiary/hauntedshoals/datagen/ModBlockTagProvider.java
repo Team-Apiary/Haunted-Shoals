@@ -2,7 +2,6 @@ package org.apiary.hauntedshoals.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 import org.apiary.hauntedshoals.block.ModBlocks;
@@ -82,5 +81,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.GHOST_WALL_CORALS)
                 .add(ModBlocks.GHOST_CORAL_WALL_FAN);
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.GHOST_CORAL_BLOCK)
+                .add(ModBlocks.GHOST_CORAL)
+                .add(ModBlocks.GHOST_CORAL_FAN)
+                .add(ModBlocks.GHOST_CORAL_WALL_FAN)
+                .add(ModBlocks.DEAD_GHOST_CORAL_BLOCK)
+                .add(ModBlocks.DEAD_GHOST_CORAL)
+                .add(ModBlocks.DEAD_GHOST_CORAL_FAN)
+                .add(ModBlocks.DEAD_GHOST_CORAL_WALL_FAN);
     }
 }
