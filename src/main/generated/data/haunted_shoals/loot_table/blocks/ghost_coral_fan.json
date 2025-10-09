@@ -23,7 +23,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "haunted_shoals:ghost_coral_fan"
+          "name": "haunted_shoals:ghost_coral_fan_item"
         }
       ],
       "rolls": 1.0

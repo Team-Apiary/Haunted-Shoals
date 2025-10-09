@@ -13,6 +13,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HAUNTED_SAILS);
         //HAUNTED WOODSET
         blockStateModelGenerator.registerLog(ModBlocks.HAUNTED_LOG).log(ModBlocks.HAUNTED_LOG).wood(ModBlocks.HAUNTED_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_HAUNTED_LOG).log(ModBlocks.STRIPPED_HAUNTED_LOG).wood(ModBlocks.STRIPPED_HAUNTED_WOOD);

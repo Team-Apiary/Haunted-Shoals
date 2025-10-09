@@ -26,6 +26,8 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLD_CUTLASS);
                         entries.add(ModItems.DIAMOND_CUTLASS);
                         entries.add(ModItems.NETHERITE_CUTLASS);
+
+                        entries.add(ModBlocks.HAUNTED_SAILS);
                         //HAUNTED WOODSET
                         entries.add(ModBlocks.HAUNTED_LOG);
                         entries.add(ModBlocks.HAUNTED_WOOD);
@@ -55,14 +57,12 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DARK_HAUNTED_PRESSURE_PLATE);
                         entries.add(ModBlocks.DARK_HAUNTED_BUTTON);
                         //GHOST CORAL
-                        entries.add(ModBlocks.GHOST_CORAL);
-                        entries.add(ModBlocks.DEAD_GHOST_CORAL);
                         entries.add(ModBlocks.GHOST_CORAL_BLOCK);
                         entries.add(ModBlocks.DEAD_GHOST_CORAL_BLOCK);
-                        entries.add(ModBlocks.GHOST_CORAL_FAN);
-                        entries.add(ModBlocks.DEAD_GHOST_CORAL_FAN);
-                        entries.add(ModBlocks.GHOST_CORAL_WALL_FAN);
-                        entries.add(ModBlocks.DEAD_GHOST_CORAL_WALL_FAN);
+                        entries.add(ModBlocks.GHOST_CORAL);
+                        entries.add(ModBlocks.DEAD_GHOST_CORAL);
+                        entries.add(ModItems.GHOST_CORAL_FAN);
+                        entries.add(ModItems.DEAD_GHOST_CORAL_FAN);
                     }).build());
 
     public static void registerModItemGroups() {

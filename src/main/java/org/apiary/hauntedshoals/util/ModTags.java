@@ -1,6 +1,7 @@
 package org.apiary.hauntedshoals.util;
 
 import net.minecraft.block.Block;
+import net.minecraft.entity.EntityType;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;
@@ -25,7 +26,7 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> HAUNTED_BLOCKS = createTag("haunted_blocks");
+        //public static final TagKey<Item> HAUNTED_BLOCKS = createTag("haunted_blocks");
         //HAUNTED WOODSETS
         public static final TagKey<Item> HAUNTED_LOGS = createTag("haunted_logs");
         public static final TagKey<Item> DARK_HAUNTED_LOGS = createTag("dark_haunted_logs");
@@ -34,6 +35,14 @@ public class ModTags {
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(ModCommonInit.MOD_ID, name));
+        }
+    }
+
+    public static class EntityTypes {
+        public static final TagKey<EntityType<?>> HAUNTED_MOBS = createTag("haunted_mobs");
+
+        private static TagKey<EntityType<?>> createTag(String name) {
+            return TagKey.of(RegistryKeys.ENTITY_TYPE, Identifier.of(ModCommonInit.MOD_ID, name));
         }
     }
 }

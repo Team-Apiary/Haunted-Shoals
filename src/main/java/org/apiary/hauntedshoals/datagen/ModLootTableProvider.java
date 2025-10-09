@@ -2,8 +2,11 @@ package org.apiary.hauntedshoals.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.registry.RegistryWrapper;
 import org.apiary.hauntedshoals.block.ModBlocks;
+import org.apiary.hauntedshoals.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -14,6 +17,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+        addDrop(ModBlocks.HAUNTED_SAILS);
         //HAUNTED WOODSET
         addDrop(ModBlocks.HAUNTED_LOG);
         addDrop(ModBlocks.HAUNTED_WOOD);
@@ -55,9 +59,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(ModBlocks.DEAD_GHOST_CORAL);
         addDropWithSilkTouch(ModBlocks.GHOST_CORAL_BLOCK);
         addDropWithSilkTouch(ModBlocks.DEAD_GHOST_CORAL_BLOCK);
-        addDropWithSilkTouch(ModBlocks.GHOST_CORAL_FAN);
-        addDropWithSilkTouch(ModBlocks.DEAD_GHOST_CORAL_FAN);
-        addDropWithSilkTouch(ModBlocks.GHOST_CORAL_WALL_FAN);
-        addDropWithSilkTouch(ModBlocks.DEAD_GHOST_CORAL_WALL_FAN);
+
+        addDropWithSilkTouchItem(ModBlocks.GHOST_CORAL_FAN, ModItems.GHOST_CORAL_FAN);
+        addDropWithSilkTouchItem(ModBlocks.DEAD_GHOST_CORAL_FAN, ModItems.DEAD_GHOST_CORAL_FAN);
+        addDropWithSilkTouchItem(ModBlocks.GHOST_CORAL_WALL_FAN, ModItems.GHOST_CORAL_FAN);
+        addDropWithSilkTouchItem(ModBlocks.DEAD_GHOST_CORAL_WALL_FAN, ModItems.DEAD_GHOST_CORAL_FAN);
+    }
+
+    public void addDropWithSilkTouchItem(Block block, ItemConvertible drop) {
+        this.addDrop(block, this.dropsWithSilkTouch(drop));
     }
 }

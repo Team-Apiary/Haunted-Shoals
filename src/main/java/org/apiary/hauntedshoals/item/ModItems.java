@@ -2,10 +2,13 @@ package org.apiary.hauntedshoals.item;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ToolMaterials;
+import net.minecraft.item.VerticallyAttachableBlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.minecraft.util.math.Direction;
+import org.apiary.hauntedshoals.block.ModBlocks;
 import org.apiary.hauntedshoals.init.ModCommonInit;
 import org.apiary.hauntedshoals.item.custom.CursedSeaglassItem;
 import org.apiary.hauntedshoals.item.custom.CursedSeaglassStaffItem;
@@ -29,6 +32,10 @@ public class ModItems {
             new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.DIAMOND, 1.0f, -1.8f))));
     public static final Item NETHERITE_CUTLASS = registerItem("netherite_cutlass", new CutlassItem(ToolMaterials.NETHERITE,
             new Item.Settings().fireproof().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1.0f, -1.8f))));
+    //Ghost Coral
+    public static final Item GHOST_CORAL_FAN = registerItem("ghost_coral_fan_item", new VerticallyAttachableBlockItem(ModBlocks.GHOST_CORAL_FAN, ModBlocks.GHOST_CORAL_WALL_FAN, new Item.Settings(), Direction.DOWN));
+    public static final Item DEAD_GHOST_CORAL_FAN = registerItem("dead_ghost_coral_fan_item", new VerticallyAttachableBlockItem(ModBlocks.DEAD_GHOST_CORAL_FAN, ModBlocks.DEAD_GHOST_CORAL_WALL_FAN, new Item.Settings(), Direction.DOWN));
+
 
     //Register Methods
     private static Item registerItem(String name, Item item) {

@@ -2,6 +2,7 @@ package org.apiary.hauntedshoals.init;
 
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
+import org.apiary.hauntedshoals.block.ModBlockProperties;
 import org.apiary.hauntedshoals.effect.ModEffects;
 import org.apiary.hauntedshoals.effect.potion.ModPotionRecipes;
 import org.apiary.hauntedshoals.effect.potion.ModPotions;
@@ -40,8 +41,10 @@ public class ModCommonInit implements ModInitializer, TerraBlenderApi{
         ModItems.registerModItems();
         ModEffects.registerModEffects();
         ModPotions.registerModPotions();
-        ModPotionRecipes.recipeRegister();
         ModFeatures.registerModFeatures();
+
+        ModPotionRecipes.recipeRegister();
+        ModBlockProperties.propertiesRegister();
     }
 
     @Override

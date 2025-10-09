@@ -16,6 +16,38 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
+
+        getOrCreateTagBuilder(ModTags.Blocks.HAUNTED_BLOCKS)
+                .add(ModBlocks.HAUNTED_SAILS)
+
+                .add(ModBlocks.HAUNTED_LOG)
+                .add(ModBlocks.HAUNTED_WOOD)
+                .add(ModBlocks.STRIPPED_HAUNTED_LOG)
+                .add(ModBlocks.STRIPPED_HAUNTED_WOOD)
+                .add(ModBlocks.HAUNTED_PLANKS)
+                .add(ModBlocks.HAUNTED_STAIRS)
+                .add(ModBlocks.HAUNTED_SLAB)
+                .add(ModBlocks.HAUNTED_FENCE)
+                .add(ModBlocks.HAUNTED_FENCE_GATE)
+                .add(ModBlocks.HAUNTED_DOOR)
+                .add(ModBlocks.HAUNTED_TRAPDOOR)
+                .add(ModBlocks.HAUNTED_PRESSURE_PLATE)
+                .add(ModBlocks.HAUNTED_BUTTON)
+
+                .add(ModBlocks.DARK_HAUNTED_LOG)
+                .add(ModBlocks.DARK_HAUNTED_WOOD)
+                .add(ModBlocks.STRIPPED_DARK_HAUNTED_LOG)
+                .add(ModBlocks.STRIPPED_DARK_HAUNTED_WOOD)
+                .add(ModBlocks.DARK_HAUNTED_PLANKS)
+                .add(ModBlocks.DARK_HAUNTED_STAIRS)
+                .add(ModBlocks.DARK_HAUNTED_SLAB)
+                .add(ModBlocks.DARK_HAUNTED_FENCE)
+                .add(ModBlocks.DARK_HAUNTED_FENCE_GATE)
+                .add(ModBlocks.DARK_HAUNTED_DOOR)
+                .add(ModBlocks.DARK_HAUNTED_TRAPDOOR)
+                .add(ModBlocks.DARK_HAUNTED_PRESSURE_PLATE)
+                .add(ModBlocks.DARK_HAUNTED_BUTTON);
+
         getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
                 .addTag(ModTags.Blocks.HAUNTED_LOGS)
                 .addTag(ModTags.Blocks.DARK_HAUNTED_LOGS);
