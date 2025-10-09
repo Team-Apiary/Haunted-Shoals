@@ -19,11 +19,11 @@ import terrablender.api.TerraBlenderApi;
 /*
 TODO
 Wraith Entity
-Haunted Block Interaction
+Haunted Block Interaction - Works based off of the player but probably won't work with multiple people around
 Render Haunted Effect
 Cutlass sidestep and lunge
 
-Complete Woodsets
+Complete Woodsets - Door textures needed
 Ghost Fleet Structure
  */
 
