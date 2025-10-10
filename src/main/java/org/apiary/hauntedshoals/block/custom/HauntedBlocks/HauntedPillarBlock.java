@@ -1,6 +1,7 @@
 package org.apiary.hauntedshoals.block.custom.HauntedBlocks;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.block.EntityShapeContext;
 import net.minecraft.block.PillarBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
@@ -14,22 +15,30 @@ import net.minecraft.world.World;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
 public class HauntedPillarBlock extends PillarBlock {
-    public static Entity globalEntity;
-
     public HauntedPillarBlock(Settings settings) {
         super(settings);
     }
 
     @Override
-    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        globalEntity = entity;
-        super.onEntityCollision(state, world, pos, entity);
+    protected VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        EntityShapeContext entityShapeContext;
+        Entity entity;
+
+        if(context instanceof EntityShapeContext && (entity = (entityShapeContext = (EntityShapeContext)context).getEntity()) != null){
+            if(((LivingEntity) entity).hasStatusEffect(ModEffects.HAUNTED)){
+                return VoxelShapes.fullCube();
+            }
+        }
+        return VoxelShapes.empty();
     }
 
     @Override
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        if(globalEntity instanceof LivingEntity){
-            if(((LivingEntity) globalEntity).hasStatusEffect(ModEffects.HAUNTED)){
+        EntityShapeContext entityShapeContext;
+        Entity entity;
+
+        if(context instanceof EntityShapeContext && (entity = (entityShapeContext = (EntityShapeContext)context).getEntity()) != null){
+            if(((LivingEntity) entity).hasStatusEffect(ModEffects.HAUNTED)){
                 return VoxelShapes.fullCube();
             }
         }

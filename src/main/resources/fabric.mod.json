@@ -25,7 +25,7 @@
       "org.apiary.hauntedshoals.init.ModCommonInit"
     ],
     "terrablender": [
-      "org.apiary.hauntedshoals.init.ModCommonInit"
+      "org.apiary.hauntedshoals.worldgen.terrablender.TerraBlenderInit"
     ]
   },
   "mixins": [
