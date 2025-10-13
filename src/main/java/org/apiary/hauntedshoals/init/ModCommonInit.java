@@ -18,6 +18,8 @@ Biome generation is broken outside of dev
 Wraith Entity
 Render Haunted Effect - E.g Glowing but with green
 Haunted Block Interaction - Functional but buggy, breaking/placing haunted blocks causes a crash sometimes (Something with block particles, Buttons broke for similar reason), Path Finding is buggy
+                          - Particles need to act like the blocks don't have a hitbox
+
 Cursed Seaglass Funtion - Currently only works on PillarBlocks
 Cutlass - 3 Blocks then push back, lunge, sidestep
 Haunted Chest/Barrel???
