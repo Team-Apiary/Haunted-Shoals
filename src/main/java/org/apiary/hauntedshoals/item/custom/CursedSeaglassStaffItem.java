@@ -68,12 +68,21 @@ public class CursedSeaglassStaffItem extends Item {
     }
 
     private Optional<BlockState> getHauntedState(BlockState state) {
-        if (Optional.ofNullable(HAUNTED_BLOCKS.get(state.getBlock())).map(block1 -> (BlockState)block1.getDefaultState().with(PillarBlock.AXIS, state.get(PillarBlock.AXIS))).isPresent()){
-            return Optional.ofNullable(HAUNTED_BLOCKS.get(state.getBlock())).map(block1 -> (BlockState)block1.getDefaultState().with(PillarBlock.AXIS, state.get(PillarBlock.AXIS)));
+        Block block = state.getBlock();
+        Block haunted = HAUNTED_BLOCKS.get(block);
 
-        }else if (Optional.ofNullable(HAUNTED_BLOCKS.get(state.getBlock())).map(block1 -> (BlockState)block1.getDefaultState().with(SlabBlock.TYPE, state.get(SlabBlock.TYPE)).with(SlabBlock.WATERLOGGED, state.get(SlabBlock.WATERLOGGED))).isPresent()){
-            return Optional.ofNullable(HAUNTED_BLOCKS.get(state.getBlock())).map(block1 -> (BlockState)block1.getDefaultState().with(SlabBlock.TYPE, state.get(SlabBlock.TYPE)).with(SlabBlock.WATERLOGGED, state.get(SlabBlock.WATERLOGGED)));
+        if (haunted == null) {
+            return Optional.empty();
         }
+
+        if (block instanceof SlabBlock) {
+            return Optional.of(haunted.getDefaultState().with(SlabBlock.TYPE, state.get(SlabBlock.TYPE)).with(SlabBlock.WATERLOGGED, state.get(SlabBlock.WATERLOGGED)));
+        }
+
+        if (block instanceof PillarBlock) {
+            return Optional.of(haunted.getDefaultState().with(PillarBlock.AXIS, state.get(PillarBlock.AXIS)));
+        }
+
         return Optional.empty();
     }
 }
