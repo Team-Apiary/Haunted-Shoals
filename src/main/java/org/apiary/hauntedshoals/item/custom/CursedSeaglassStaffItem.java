@@ -1,10 +1,7 @@
 package org.apiary.hauntedshoals.item.custom;
 
 import com.google.common.collect.ImmutableMap;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.PillarBlock;
+import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -25,6 +22,8 @@ import java.util.Optional;
 
 public class CursedSeaglassStaffItem extends Item {
     protected static final Map<Block, Block> HAUNTED_BLOCKS = new ImmutableMap.Builder<Block, Block>()
+            .put(Blocks.OAK_PLANKS, ModBlocks.HAUNTED_PLANKS)
+
             .put(Blocks.OAK_LOG, ModBlocks.HAUNTED_LOG)
             .put(Blocks.OAK_WOOD, ModBlocks.HAUNTED_WOOD)
             .put(Blocks.STRIPPED_OAK_LOG, ModBlocks.STRIPPED_HAUNTED_LOG)
@@ -34,6 +33,9 @@ public class CursedSeaglassStaffItem extends Item {
             .put(Blocks.DARK_OAK_WOOD, ModBlocks.DARK_HAUNTED_WOOD)
             .put(Blocks.STRIPPED_DARK_OAK_LOG, ModBlocks.STRIPPED_DARK_HAUNTED_LOG)
             .put(Blocks.STRIPPED_DARK_OAK_WOOD, ModBlocks.STRIPPED_DARK_HAUNTED_WOOD)
+
+            .put(Blocks.OAK_SLAB, ModBlocks.HAUNTED_SLAB)
+            .put(Blocks.DARK_OAK_SLAB, ModBlocks.DARK_HAUNTED_SLAB)
             .build();
 
     public CursedSeaglassStaffItem(Settings settings) {
@@ -66,6 +68,12 @@ public class CursedSeaglassStaffItem extends Item {
     }
 
     private Optional<BlockState> getHauntedState(BlockState state) {
-        return Optional.ofNullable(HAUNTED_BLOCKS.get(state.getBlock())).map(block1 -> (BlockState)block1.getDefaultState().with(PillarBlock.AXIS, state.get(PillarBlock.AXIS)));
+        if (Optional.ofNullable(HAUNTED_BLOCKS.get(state.getBlock())).map(block1 -> (BlockState)block1.getDefaultState().with(PillarBlock.AXIS, state.get(PillarBlock.AXIS))).isPresent()){
+            return Optional.ofNullable(HAUNTED_BLOCKS.get(state.getBlock())).map(block1 -> (BlockState)block1.getDefaultState().with(PillarBlock.AXIS, state.get(PillarBlock.AXIS)));
+
+        }else if (Optional.ofNullable(HAUNTED_BLOCKS.get(state.getBlock())).map(block1 -> (BlockState)block1.getDefaultState().with(SlabBlock.TYPE, state.get(SlabBlock.TYPE)).with(SlabBlock.WATERLOGGED, state.get(SlabBlock.WATERLOGGED))).isPresent()){
+            return Optional.ofNullable(HAUNTED_BLOCKS.get(state.getBlock())).map(block1 -> (BlockState)block1.getDefaultState().with(SlabBlock.TYPE, state.get(SlabBlock.TYPE)).with(SlabBlock.WATERLOGGED, state.get(SlabBlock.WATERLOGGED)));
+        }
+        return Optional.empty();
     }
 }
