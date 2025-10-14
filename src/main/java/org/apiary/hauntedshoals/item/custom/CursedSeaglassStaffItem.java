@@ -14,6 +14,7 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.apiary.hauntedshoals.block.ModBlocks;
@@ -101,16 +102,19 @@ public class CursedSeaglassStaffItem extends Item {
 
         Optional<BlockState> optional = this.getHauntedState(blockState);
         if (optional.isPresent()) {
-            Random random = world.getRandom();
-            double d = (double)blockPos.getX() + random.nextDouble();
-            double e = (double)blockPos.getY() + random.nextDouble();
-            double f = (double)blockPos.getZ() + random.nextDouble();
             world.playSound(null, blockPos, SoundEvents.BLOCK_SOUL_SAND_BREAK, SoundCategory.BLOCKS, 1.0f, 1.0f);
-            world.addParticle(ParticleTypes.SOUL, d, e, f, 0.0, 0.0, 0.0);
+            for (int i = 0; i < 5; i++) {
+                Random random = world.getRandom();
+                Direction direction = Direction.random(random);
+                double d = direction.getOffsetX() == 0 ? random.nextDouble() : 0.5 + (double)direction.getOffsetX() * 0.6;
+                double e = direction.getOffsetY() == 0 ? random.nextDouble() : 0.5 + (double)direction.getOffsetY() * 0.6;
+                double f = direction.getOffsetZ() == 0 ? random.nextDouble() : 0.5 + (double)direction.getOffsetZ() * 0.6;
+                world.addParticle(ParticleTypes.SOUL, (double)blockPos.getX() + d, (double)blockPos.getY() + e, (double)blockPos.getZ() + f, 0.0, 0.0, 0.0);
+            }
             world.setBlockState(blockPos, optional.get(), Block.NOTIFY_ALL_AND_REDRAW);
             return ActionResult.success(world.isClient);
         }
-        return ActionResult.success(world.isClient);
+        return ActionResult.FAIL;
     }
 
     private Optional<BlockState> getHauntedState(BlockState state) {
