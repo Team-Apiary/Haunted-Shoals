@@ -21,19 +21,6 @@ public class HauntedButtonBlock extends ButtonBlock {
     }
 
     @Override
-    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-        if (entity instanceof ArrowEntity arrow) {
-            ItemStack arrowStack = arrow.getItemStack();
-            if (arrowStack.getItem() == Items.TIPPED_ARROW) {
-                String arrowName = arrowStack.getTranslationKey();
-                if(Objects.equals(arrowName, "item.minecraft.tipped_arrow.effect.haunted") || Objects.equals(arrowName, "item.minecraft.tipped_arrow.effect.long_haunted")){
-                    this.tryPowerWithProjectiles(state, world, pos);
-                }
-            }
-        }
-    }
-
-    @Override
     protected VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         Entity entity;
 
@@ -58,4 +45,18 @@ public class HauntedButtonBlock extends ButtonBlock {
             return super.getOutlineShape(state, world, pos, context);
         }
     }
+
+    @Override
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+        if (entity instanceof ArrowEntity arrow) {
+            ItemStack arrowStack = arrow.getItemStack();
+            if (arrowStack.getItem() == Items.TIPPED_ARROW) {
+                String arrowName = arrowStack.getTranslationKey();
+                if(Objects.equals(arrowName, "item.minecraft.tipped_arrow.effect.haunted") || Objects.equals(arrowName, "item.minecraft.tipped_arrow.effect.long_haunted")){
+                    this.tryPowerWithProjectiles(state, world, pos);
+                }
+            }
+        }
+    }
+
 }

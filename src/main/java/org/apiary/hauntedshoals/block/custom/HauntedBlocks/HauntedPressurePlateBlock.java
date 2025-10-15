@@ -7,6 +7,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
 //TODO Make it so that only haunted entities can activate the pressure plate
@@ -39,6 +40,15 @@ public class HauntedPressurePlateBlock extends PressurePlateBlock {
             return VoxelShapes.empty();
         }else {
             return super.getOutlineShape(state, world, pos, context);
+        }
+    }
+
+    @Override
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+        if (entity instanceof LivingEntity) {
+            if (((LivingEntity) entity).hasStatusEffect(ModEffects.HAUNTED)) {
+                super.onEntityCollision(state, world, pos, entity);
+            }
         }
     }
 }

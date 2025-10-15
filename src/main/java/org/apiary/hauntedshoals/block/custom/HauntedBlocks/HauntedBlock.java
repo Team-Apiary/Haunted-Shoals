@@ -4,7 +4,6 @@ import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.*;
 import net.minecraft.world.BlockView;
 import org.apiary.hauntedshoals.effect.ModEffects;
@@ -41,13 +40,5 @@ public class HauntedBlock extends Block {
         }else {
             return super.getOutlineShape(state, world, pos, context);
         }
-    }
-
-    @Override
-    protected boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
-        if (stateFrom.isOf(this)) {
-            return true;
-        }
-        return super.isSideInvisible(state, stateFrom, direction);
     }
 }
