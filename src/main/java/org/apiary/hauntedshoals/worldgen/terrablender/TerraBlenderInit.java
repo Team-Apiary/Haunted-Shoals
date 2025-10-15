@@ -5,6 +5,8 @@ import org.apiary.hauntedshoals.init.ModCommonInit;
 import terrablender.api.Regions;
 import terrablender.api.TerraBlenderApi;
 
+//TODO Fix terrablender generation outside of dev
+
 public class TerraBlenderInit implements TerraBlenderApi {
     @Override
     public void onTerraBlenderInitialized()

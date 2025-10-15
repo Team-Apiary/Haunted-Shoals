@@ -7,11 +7,9 @@ import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
-import net.minecraft.world.World;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
 public class HauntedPillarBlock extends PillarBlock {
@@ -21,12 +19,11 @@ public class HauntedPillarBlock extends PillarBlock {
 
     @Override
     protected VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        EntityShapeContext entityShapeContext;
         Entity entity;
 
-        if(context instanceof EntityShapeContext && (entity = (entityShapeContext = (EntityShapeContext)context).getEntity()) != null){
+        if(context instanceof EntityShapeContext && (entity = ((EntityShapeContext)context).getEntity()) != null && entity instanceof LivingEntity){
             if(((LivingEntity) entity).hasStatusEffect(ModEffects.HAUNTED)){
-                return VoxelShapes.fullCube();
+                return super.getCollisionShape(state, world, pos, context);
             }
         }
         return VoxelShapes.empty();
@@ -34,22 +31,15 @@ public class HauntedPillarBlock extends PillarBlock {
 
     @Override
     protected VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        EntityShapeContext entityShapeContext;
         Entity entity;
 
-        if(context instanceof EntityShapeContext && (entity = (entityShapeContext = (EntityShapeContext)context).getEntity()) != null){
-            if(((LivingEntity) entity).hasStatusEffect(ModEffects.HAUNTED)){
-                return VoxelShapes.fullCube();
+        if (context instanceof EntityShapeContext && (entity = ((EntityShapeContext) context).getEntity()) != null && entity instanceof LivingEntity) {
+            if (((LivingEntity) entity).hasStatusEffect(ModEffects.HAUNTED)) {
+                return super.getOutlineShape(state, world, pos, context);
             }
+            return VoxelShapes.empty();
+        }else {
+            return super.getOutlineShape(state, world, pos, context);
         }
-        return VoxelShapes.empty();
-    }
-
-    @Override
-    protected boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
-        if (stateFrom.isOf(this)) {
-            return true;
-        }
-        return super.isSideInvisible(state, stateFrom, direction);
     }
 }

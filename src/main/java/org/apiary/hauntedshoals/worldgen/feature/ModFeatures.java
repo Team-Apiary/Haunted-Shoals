@@ -10,6 +10,8 @@ import org.apiary.hauntedshoals.worldgen.feature.custom.GhostCoralClawFeature;
 import org.apiary.hauntedshoals.worldgen.feature.custom.GhostCoralMushroomFeature;
 import org.apiary.hauntedshoals.worldgen.feature.custom.GhostCoralTreeFeature;
 
+//TODO Fix custom coral features
+
 public class ModFeatures {
     public static Feature<DefaultFeatureConfig> GHOST_CORAL_CLAW;
     public static Feature<DefaultFeatureConfig> GHOST_CORAL_TREE;

@@ -21,6 +21,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
+//TODO Implement side hop and dash functions
+//TODO Implement better blocking feature (3 blocks -> cooldown)
+
 public class CutlassItem extends ToolItem{
 
     public CutlassItem(ToolMaterial toolMaterial, Item.Settings settings) {

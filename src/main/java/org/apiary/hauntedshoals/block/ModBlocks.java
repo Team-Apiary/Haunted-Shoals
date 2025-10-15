@@ -9,6 +9,10 @@ import net.minecraft.util.Identifier;
 import org.apiary.hauntedshoals.block.custom.HauntedBlocks.*;
 import org.apiary.hauntedshoals.init.ModCommonInit;
 
+//TODO Haunted Lantern
+//TODO Haunted Chest/Barrel
+//TODO Ghost Coral Textures
+
 public class ModBlocks {
     public static final Block HAUNTED_SAILS = registerBlock("haunted_sails", new HauntedBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
     //HAUNTED WOODSET
@@ -24,7 +28,7 @@ public class ModBlocks {
     public static final Block HAUNTED_DOOR  = registerBlock("haunted_door", new HauntedDoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
     public static final Block HAUNTED_TRAPDOOR = registerBlock("haunted_trapdoor", new HauntedTrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
     public static final Block HAUNTED_PRESSURE_PLATE = registerBlock("haunted_pressure_plate", new HauntedPressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
-    public static final Block HAUNTED_BUTTON = registerBlock("haunted_button", new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
+    public static final Block HAUNTED_BUTTON = registerBlock("haunted_button", new HauntedButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
     //DARK HAUNTED WOODSET
     public static final Block DARK_HAUNTED_LOG  = registerBlock("dark_haunted_log", new HauntedPillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).mapColor(MapColor.GREEN).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
     public static final Block DARK_HAUNTED_WOOD  = registerBlock("dark_haunted_wood", new HauntedPillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).mapColor(MapColor.GREEN).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
@@ -38,7 +42,7 @@ public class ModBlocks {
     public static final Block DARK_HAUNTED_DOOR  = registerBlock("dark_haunted_door", new HauntedDoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_DOOR).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
     public static final Block DARK_HAUNTED_TRAPDOOR  = registerBlock("dark_haunted_trapdoor", new HauntedTrapdoorBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_TRAPDOOR).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
     public static final Block DARK_HAUNTED_PRESSURE_PLATE = registerBlock("dark_haunted_pressure_plate", new HauntedPressurePlateBlock(BlockSetType.OAK, AbstractBlock.Settings.copy(Blocks.OAK_PRESSURE_PLATE).mapColor(MapColor.GREEN).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
-    public static final Block DARK_HAUNTED_BUTTON = registerBlock("dark_haunted_button", new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON).mapColor(MapColor.GREEN).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
+    public static final Block DARK_HAUNTED_BUTTON = registerBlock("dark_haunted_button", new HauntedButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(Blocks.OAK_BUTTON).mapColor(MapColor.GREEN).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
     //GHOST CORAL
     public static final Block DEAD_GHOST_CORAL_BLOCK = registerBlock("dead_ghost_coral_block", new Block(AbstractBlock.Settings.copy(Blocks.DEAD_BRAIN_CORAL_BLOCK).mapColor(MapColor.WHITE)));
     public static final Block GHOST_CORAL_BLOCK = registerBlock("ghost_coral_block", new CoralBlockBlock(ModBlocks.DEAD_GHOST_CORAL_BLOCK, AbstractBlock.Settings.copy(Blocks.BRAIN_CORAL_BLOCK).mapColor(MapColor.WHITE)));
