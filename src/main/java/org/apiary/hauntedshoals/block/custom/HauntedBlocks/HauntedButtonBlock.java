@@ -3,17 +3,34 @@ package org.apiary.hauntedshoals.block.custom.HauntedBlocks;
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.projectile.ArrowEntity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
-//TODO Add a check so that only haunted arrows can activate the button
+import java.util.Objects;
 
 public class HauntedButtonBlock extends ButtonBlock {
     public HauntedButtonBlock(BlockSetType blockSetType, int pressTicks, Settings settings) {
         super(blockSetType, pressTicks, settings);
+    }
+
+    @Override
+    protected void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
+        if (entity instanceof ArrowEntity arrow) {
+            ItemStack arrowStack = arrow.getItemStack();
+            if (arrowStack.getItem() == Items.TIPPED_ARROW) {
+                String arrowName = arrowStack.getTranslationKey();
+                if(Objects.equals(arrowName, "item.minecraft.tipped_arrow.effect.haunted") || Objects.equals(arrowName, "item.minecraft.tipped_arrow.effect.long_haunted")){
+                    this.tryPowerWithProjectiles(state, world, pos);
+                }
+            }
+        }
     }
 
     @Override

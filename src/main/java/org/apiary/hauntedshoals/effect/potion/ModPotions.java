@@ -9,9 +9,9 @@ import net.minecraft.util.Identifier;
 import org.apiary.hauntedshoals.init.ModCommonInit;
 
 public class ModPotions {
-    public static final RegistryEntry<Potion> HAUNTED_POTION = registerPotion("haunted_potion",
+    public static final RegistryEntry<Potion> HAUNTED_POTION = registerPotion("haunted",
             new Potion(new StatusEffectInstance(org.apiary.hauntedshoals.effect.ModEffects.HAUNTED, 3600, 0)));
-    public static final RegistryEntry<Potion> LONG_HAUNTED_POTION = registerPotion("long_haunted_potion",
+    public static final RegistryEntry<Potion> LONG_HAUNTED_POTION = registerPotion("long_haunted",
             new Potion(new StatusEffectInstance(org.apiary.hauntedshoals.effect.ModEffects.HAUNTED, 9600, 0)));
 
     private static RegistryEntry<Potion> registerPotion(String name, Potion potion) {

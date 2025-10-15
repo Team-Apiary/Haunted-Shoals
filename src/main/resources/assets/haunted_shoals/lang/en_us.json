@@ -57,15 +57,15 @@
 
   "effect.haunted_shoals.haunted": "Haunted",
 
-  "item.minecraft.potion.effect.haunted_potion": "Potion of Haunting",
-  "item.minecraft.splash_potion.effect.haunted_potion": "Splash Potion of Haunting",
-  "item.minecraft.lingering_potion.effect.haunted_potion": "Lingering Potion of Haunting",
-  "item.minecraft.tipped_arrow.effect.haunted_potion": "Arrow of Haunting",
+  "item.minecraft.potion.effect.haunted": "Potion of Haunting",
+  "item.minecraft.splash_potion.effect.haunted": "Splash Potion of Haunting",
+  "item.minecraft.lingering_potion.effect.haunted": "Lingering Potion of Haunting",
+  "item.minecraft.tipped_arrow.effect.haunted": "Arrow of Haunting",
 
-  "item.minecraft.potion.effect.long_haunted_potion": "Potion of Haunting",
-  "item.minecraft.splash_potion.effect.long_haunted_potion": "Splash Potion of Haunting",
-  "item.minecraft.lingering_potion.effect.long_haunted_potion": "Lingering Potion of Haunting",
-  "item.minecraft.tipped_arrow.effect.long_haunted_potion": "Arrow of Haunting",
+  "item.minecraft.potion.effect.long_haunted": "Potion of Haunting",
+  "item.minecraft.splash_potion.effect.long_haunted": "Splash Potion of Haunting",
+  "item.minecraft.lingering_potion.effect.long_haunted": "Lingering Potion of Haunting",
+  "item.minecraft.tipped_arrow.effect.long_haunted": "Arrow of Haunting",
 
   "tag.item.haunted_shoals.haunted_logs": "Haunted Logs",
   "tag.item.haunted_shoals.dark_haunted_logs": "Dark Haunted Logs",
