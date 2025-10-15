@@ -10,8 +10,6 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
-//TODO Make it so that only haunted entities can activate the pressure plate
-
 public class HauntedPressurePlateBlock extends PressurePlateBlock {
     public HauntedPressurePlateBlock(BlockSetType type, Settings settings) {
         super(type, settings);
