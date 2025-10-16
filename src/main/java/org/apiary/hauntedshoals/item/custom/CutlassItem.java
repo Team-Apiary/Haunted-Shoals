@@ -24,38 +24,10 @@ import java.util.List;
 //TODO Implement side hop and dash functions
 //TODO Implement better blocking feature (3 blocks -> cooldown)
 
-public class CutlassItem extends ToolItem{
-
-    public CutlassItem(ToolMaterial toolMaterial, Item.Settings settings) {
-        super(toolMaterial, settings.component(DataComponentTypes.TOOL, CutlassItem.createToolComponent()));
+public class CutlassItem extends SwordItem{
+    public CutlassItem(ToolMaterial toolMaterial, Settings settings) {
+        super(toolMaterial, settings);
     }
-
-    /*  SWORD CODE  */
-
-    private static ToolComponent createToolComponent() {
-        return new ToolComponent(List.of(ToolComponent.Rule.ofAlwaysDropping(List.of(Blocks.COBWEB), 15.0f), ToolComponent.Rule.of(BlockTags.SWORD_EFFICIENT, 1.5f)), 1.0f, 2);
-    }
-
-    public static AttributeModifiersComponent createAttributeModifiers(ToolMaterial material, float baseAttackDamage, float attackSpeed) {
-        return AttributeModifiersComponent.builder().add(EntityAttributes.GENERIC_ATTACK_DAMAGE, new EntityAttributeModifier(BASE_ATTACK_DAMAGE_MODIFIER_ID, baseAttackDamage + material.getAttackDamage(), EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.MAINHAND).add(EntityAttributes.GENERIC_ATTACK_SPEED, new EntityAttributeModifier(BASE_ATTACK_SPEED_MODIFIER_ID, attackSpeed, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.MAINHAND).build();
-    }
-
-    @Override
-    public boolean canMine(BlockState state, World world, BlockPos pos, PlayerEntity miner) {
-        return !miner.isCreative();
-    }
-
-    @Override
-    public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        return true;
-    }
-
-    @Override
-    public void postDamageEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        stack.damage(1, attacker, EquipmentSlot.MAINHAND);
-    }
-
-    /*  BLOCKING CODE  */
 
     @Override
     public UseAction getUseAction(ItemStack stack) {
@@ -73,14 +45,4 @@ public class CutlassItem extends ToolItem{
         user.setCurrentHand(hand);
         return TypedActionResult.consume(itemStack);
     }
-
-    /*
-    public static void applyDirectionalPush(ServerPlayerEntity player) {
-        Vec3d look = player.getRotationVec(1.0F);
-        double strength = 0.8;
-
-        player.addVelocity(look.x * strength, 0.5, look.z * strength);
-        player.velocityModified = true;
-    }
-     */
 }

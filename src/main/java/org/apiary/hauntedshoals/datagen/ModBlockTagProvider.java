@@ -17,8 +17,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.HAUNTED_BARREL);
+
+        getOrCreateTagBuilder(BlockTags.WOOL)
+                .add(ModBlocks.HAUNTED_SAILS);
+
         getOrCreateTagBuilder(ModTags.Blocks.HAUNTED_BLOCKS)
                 .add(ModBlocks.HAUNTED_SAILS)
+                .add(ModBlocks.HAUNTED_BARREL)
 
                 .add(ModBlocks.HAUNTED_LOG)
                 .add(ModBlocks.HAUNTED_WOOD)

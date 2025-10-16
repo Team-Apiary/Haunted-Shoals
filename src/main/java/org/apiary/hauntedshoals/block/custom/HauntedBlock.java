@@ -1,19 +1,19 @@
-package org.apiary.hauntedshoals.block.custom.HauntedBlocks;
+package org.apiary.hauntedshoals.block.custom;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.EntityShapeContext;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.shape.*;
 import net.minecraft.world.BlockView;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
-public class HauntedPillarBlock extends PillarBlock {
-    public HauntedPillarBlock(Settings settings) {
+//TODO Fix pathfinding
+//TODO Implement a good method for culling that can translate to the other block shapes
+
+public class HauntedBlock extends Block {
+    public HauntedBlock(Settings settings) {
         super(settings);
     }
 
@@ -41,5 +41,13 @@ public class HauntedPillarBlock extends PillarBlock {
         }else {
             return super.getOutlineShape(state, world, pos, context);
         }
+    }
+
+    @Override
+    protected boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
+        if (stateFrom.isOf(this)) {
+            return true;
+        }
+        return super.isSideInvisible(state, stateFrom, direction);
     }
 }

@@ -1,17 +1,21 @@
-package org.apiary.hauntedshoals.block.custom.HauntedBlocks;
+package org.apiary.hauntedshoals.block.custom;
 
-import net.minecraft.block.*;
+import net.minecraft.block.BarrelBlock;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.EntityShapeContext;
+import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
-public class HauntedFenceGateBlock extends FenceGateBlock {
-    public HauntedFenceGateBlock(WoodType type, Settings settings) {
-        super(type, settings);
+public class HauntedBarrelBlock extends BarrelBlock {
+    public HauntedBarrelBlock(Settings settings) {
+        super(settings);
     }
 
     @Override
@@ -38,5 +42,13 @@ public class HauntedFenceGateBlock extends FenceGateBlock {
         }else {
             return super.getOutlineShape(state, world, pos, context);
         }
+    }
+
+    @Override
+    protected boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
+        if (stateFrom.isOf(this)) {
+            return true;
+        }
+        return super.isSideInvisible(state, stateFrom, direction);
     }
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2025-10-09T13:05:28.6731518	Haunted Shoals/Block Loot Tables
+// 1.21.1	2025-10-16T01:12:42.4653594	Haunted Shoals/Block Loot Tables
 bff025f6d7bbde07e35a72ee53c9722572b2876c data\haunted_shoals\loot_table\blocks\haunted_pressure_plate.json
 ab875fc81bfbfc579b09bafc2d3717504d0e1758 data\haunted_shoals\loot_table\blocks\haunted_slab.json
 dbbd0a39d504f2d67a3996b3f48e3240fe36bb71 data\haunted_shoals\loot_table\blocks\ghost_coral_wall_fan.json
@@ -16,6 +16,7 @@ dbbd0a39d504f2d67a3996b3f48e3240fe36bb71 data\haunted_shoals\loot_table\blocks\g
 2d863faf10f9d108bd3629ad3dec602d06d62c4b data\haunted_shoals\loot_table\blocks\dark_haunted_log.json
 a7d92dcaf915f7ea1651fd365d33456cd655de5f data\haunted_shoals\loot_table\blocks\stripped_haunted_log.json
 a1e7877a0ad89f6e619db7af7449685ccd045945 data\haunted_shoals\loot_table\blocks\dead_ghost_coral_block.json
+d7455b899e742e1b83da1b92b1b4e31c50ce2f16 data\haunted_shoals\loot_table\blocks\haunted_barrel.json
 0c9cda2b8faff9a6e5a1f09dff4f14bdfe924b55 data\haunted_shoals\loot_table\blocks\dead_ghost_coral_fan.json
 dcc8aa0afe0105d5aebe82489124fabcbf5b01d3 data\haunted_shoals\loot_table\blocks\haunted_planks.json
 f81aa87d60fcae8c31842d75ebe1ed915fdfa0d0 data\haunted_shoals\loot_table\blocks\haunted_trapdoor.json

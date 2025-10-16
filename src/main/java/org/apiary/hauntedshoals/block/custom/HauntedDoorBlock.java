@@ -1,4 +1,4 @@
-package org.apiary.hauntedshoals.block.custom.HauntedBlocks;
+package org.apiary.hauntedshoals.block.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
@@ -9,8 +9,8 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
-public class HauntedTrapdoorBlock extends TrapdoorBlock {
-    public HauntedTrapdoorBlock(BlockSetType type, Settings settings) {
+public class HauntedDoorBlock extends DoorBlock {
+    public HauntedDoorBlock(BlockSetType type, Settings settings) {
         super(type, settings);
     }
 

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "haunted_shoals:block/haunted_barrel_bottom",
+    "side": "haunted_shoals:block/haunted_barrel_side",
+    "top": "haunted_shoals:block/haunted_barrel_top"
+  }
+}

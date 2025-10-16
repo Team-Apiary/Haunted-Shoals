@@ -1,18 +1,19 @@
-package org.apiary.hauntedshoals.block.custom.HauntedBlocks;
+package org.apiary.hauntedshoals.block.custom;
 
-import net.minecraft.block.*;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.EntityShapeContext;
+import net.minecraft.block.ShapeContext;
+import net.minecraft.block.SlabBlock;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.shape.*;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
-//TODO Fix pathfinding
-//TODO Implement a good method for culling that can translate to the other block shapes
-
-public class HauntedBlock extends Block {
-    public HauntedBlock(Settings settings) {
+public class HauntedSlabBlock extends SlabBlock {
+    public HauntedSlabBlock(Settings settings) {
         super(settings);
     }
 

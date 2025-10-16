@@ -11,6 +11,8 @@
   "item.haunted_shoals.diamond_cutlass": "Diamond Cutlass",
   "item.haunted_shoals.netherite_cutlass": "Netherite Cutlass",
 
+  "block.haunted_shoals.haunted_barrel": "Haunted Barrel",
+
   "block.haunted_shoals.haunted_sails": "Haunted Sails",
 
   "block.haunted_shoals.haunted_log": "Haunted Log",
@@ -69,5 +71,7 @@
 
   "tag.item.haunted_shoals.haunted_logs": "Haunted Logs",
   "tag.item.haunted_shoals.dark_haunted_logs": "Dark Haunted Logs",
-  "tag.item.haunted_shoals.cutlasses": "Cutlasses"
+  "tag.item.haunted_shoals.cutlasses": "Cutlasses",
+
+  "tooltip.haunted_shoals.cursed_seaglass_staff": "Converts certain blocks into a haunted variant."
 }

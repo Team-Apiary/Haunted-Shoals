@@ -18,6 +18,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.HAUNTED_SAILS);
+        addDrop(ModBlocks.HAUNTED_BARREL);
         //HAUNTED WOODSET
         addDrop(ModBlocks.HAUNTED_LOG);
         addDrop(ModBlocks.HAUNTED_WOOD);

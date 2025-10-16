@@ -9,9 +9,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -20,6 +22,7 @@ import net.minecraft.world.World;
 import org.apiary.hauntedshoals.block.ModBlocks;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -41,6 +44,8 @@ public class CursedSeaglassStaffItem extends Item {
             .put(Blocks.PURPLE_WOOL, ModBlocks.HAUNTED_SAILS)
             .put(Blocks.RED_WOOL, ModBlocks.HAUNTED_SAILS)
             .put(Blocks.YELLOW_WOOL, ModBlocks.HAUNTED_SAILS)
+
+            .put(Blocks.BARREL, ModBlocks.HAUNTED_BARREL)
 
             .put(Blocks.OAK_PLANKS, ModBlocks.HAUNTED_PLANKS)
             .put(Blocks.DARK_OAK_PLANKS, ModBlocks.DARK_HAUNTED_PLANKS)
@@ -85,6 +90,12 @@ public class CursedSeaglassStaffItem extends Item {
     }
 
     @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        tooltip.add(Text.translatable("tooltip.haunted_shoals.cursed_seaglass_staff"));
+        super.appendTooltip(stack, context, tooltip, type);
+    }
+
+    @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         super.inventoryTick(stack, world, entity, slot, selected);
 
@@ -123,6 +134,11 @@ public class CursedSeaglassStaffItem extends Item {
 
         if (haunted == null) {
             return Optional.empty();
+        }
+
+        if (block instanceof BarrelBlock) {
+            return Optional.of(haunted.getDefaultState()
+                    .with(BarrelBlock.FACING, state.get(BarrelBlock.FACING)));
         }
 
         if (block instanceof ButtonBlock) {

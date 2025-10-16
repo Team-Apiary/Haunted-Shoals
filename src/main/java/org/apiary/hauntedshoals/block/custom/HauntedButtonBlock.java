@@ -1,4 +1,4 @@
-package org.apiary.hauntedshoals.block.custom.HauntedBlocks;
+package org.apiary.hauntedshoals.block.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;

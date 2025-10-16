@@ -10,6 +10,7 @@ public class ModClientInit implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HAUNTED_SAILS, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HAUNTED_BARREL, RenderLayer.getTranslucent());
         //HAUNTED WOODSET
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HAUNTED_LOG, RenderLayer.getTranslucent());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.HAUNTED_WOOD, RenderLayer.getTranslucent());

@@ -6,7 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import org.apiary.hauntedshoals.block.custom.HauntedBlocks.*;
+import org.apiary.hauntedshoals.block.custom.*;
 import org.apiary.hauntedshoals.init.ModCommonInit;
 
 //TODO Haunted Lantern
@@ -15,6 +15,7 @@ import org.apiary.hauntedshoals.init.ModCommonInit;
 
 public class ModBlocks {
     public static final Block HAUNTED_SAILS = registerBlock("haunted_sails", new HauntedBlock(AbstractBlock.Settings.copy(Blocks.WHITE_WOOL).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
+    public static final Block HAUNTED_BARREL = registerBlock("haunted_barrel", new HauntedBarrelBlock(AbstractBlock.Settings.copy(Blocks.BARREL).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
     //HAUNTED WOODSET
     public static final Block HAUNTED_LOG  = registerBlock("haunted_log", new HauntedPillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));
     public static final Block HAUNTED_WOOD  = registerBlock("haunted_wood", new HauntedPillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).mapColor(MapColor.LIME).nonOpaque().suffocates(Blocks::never).blockVision(Blocks::never)));

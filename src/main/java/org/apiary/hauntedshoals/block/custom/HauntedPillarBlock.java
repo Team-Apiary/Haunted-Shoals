@@ -1,21 +1,20 @@
-package org.apiary.hauntedshoals.block.custom.HauntedBlocks;
+package org.apiary.hauntedshoals.block.custom;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.EntityShapeContext;
-import net.minecraft.block.FenceBlock;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import org.apiary.hauntedshoals.effect.ModEffects;
 
-//TODO Haunted Fences are missing the half block hitbox on the top of them
-
-public class HauntedFenceBlock extends FenceBlock {
-    public HauntedFenceBlock(Settings settings) {
+public class HauntedPillarBlock extends PillarBlock {
+    public HauntedPillarBlock(Settings settings) {
         super(settings);
     }
 
@@ -43,5 +42,13 @@ public class HauntedFenceBlock extends FenceBlock {
         }else {
             return super.getOutlineShape(state, world, pos, context);
         }
+    }
+
+    @Override
+    protected boolean isSideInvisible(BlockState state, BlockState stateFrom, Direction direction) {
+        if (stateFrom.isOf(this)) {
+            return true;
+        }
+        return super.isSideInvisible(state, stateFrom, direction);
     }
 }

@@ -2,6 +2,7 @@ package org.apiary.hauntedshoals.init;
 
 import net.fabricmc.api.ModInitializer;
 import org.apiary.hauntedshoals.block.ModBlockProperties;
+import org.apiary.hauntedshoals.block.entity.ModBlockEntities;
 import org.apiary.hauntedshoals.effect.ModEffects;
 import org.apiary.hauntedshoals.effect.potion.ModPotionRecipes;
 import org.apiary.hauntedshoals.effect.potion.ModPotions;
@@ -24,8 +25,9 @@ public class ModCommonInit implements ModInitializer{
         LOGGER.info("Initializing the ghost fleet");
 
         ModItemGroups.registerModItemGroups();
-        ModBlocks.registerModBlocks();
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
+        ModBlockEntities.registerModBlockEntities();
         ModEffects.registerModEffects();
         ModPotions.registerModPotions();
         ModFeatures.registerModFeatures();

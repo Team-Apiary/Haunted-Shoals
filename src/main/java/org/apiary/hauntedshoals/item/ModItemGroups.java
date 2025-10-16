@@ -28,6 +28,7 @@ public class ModItemGroups {
                         entries.add(ModItems.NETHERITE_CUTLASS);
 
                         entries.add(ModBlocks.HAUNTED_SAILS);
+                        entries.add(ModBlocks.HAUNTED_BARREL);
                         //HAUNTED WOODSET
                         entries.add(ModBlocks.HAUNTED_LOG);
                         entries.add(ModBlocks.HAUNTED_WOOD);

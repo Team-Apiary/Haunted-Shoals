@@ -21,17 +21,17 @@ public class ModItems {
     public static final Item CURSED_SEAGLASS_STAFF = registerItem("cursed_seaglass_staff", new CursedSeaglassStaffItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
     //CUTLASSES
     public static final Item WOOD_CUTLASS = registerItem("wood_cutlass", new CutlassItem(ToolMaterials.WOOD,
-            new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.WOOD, 1.0f, -1.8f))));
+            new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.WOOD, 1, -1.8f))));
     public static final Item STONE_CUTLASS = registerItem("stone_cutlass", new CutlassItem(ToolMaterials.STONE,
-            new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.STONE, 1.0f, -1.8f))));
+            new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.STONE, 1, -1.8f))));
     public static final Item IRON_CUTLASS = registerItem("iron_cutlass", new CutlassItem(ToolMaterials.IRON,
-            new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.IRON, 1.0f, -1.8f))));
+            new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.IRON, 1, -1.8f))));
     public static final Item GOLD_CUTLASS = registerItem("gold_cutlass", new CutlassItem(ToolMaterials.GOLD,
-            new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.GOLD, 1.0f, -1.8f))));
+            new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.GOLD, 1, -1.8f))));
     public static final Item DIAMOND_CUTLASS = registerItem("diamond_cutlass", new CutlassItem(ToolMaterials.DIAMOND,
-            new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.DIAMOND, 1.0f, -1.8f))));
+            new Item.Settings().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.DIAMOND, 1, -1.8f))));
     public static final Item NETHERITE_CUTLASS = registerItem("netherite_cutlass", new CutlassItem(ToolMaterials.NETHERITE,
-            new Item.Settings().fireproof().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1.0f, -1.8f))));
+            new Item.Settings().fireproof().attributeModifiers(CutlassItem.createAttributeModifiers(ToolMaterials.NETHERITE, 1, -1.8f))));
     //Ghost Coral
     public static final Item GHOST_CORAL_FAN = registerItem("ghost_coral_fan_item", new VerticallyAttachableBlockItem(ModBlocks.GHOST_CORAL_FAN, ModBlocks.GHOST_CORAL_WALL_FAN, new Item.Settings(), Direction.DOWN));
     public static final Item DEAD_GHOST_CORAL_FAN = registerItem("dead_ghost_coral_fan_item", new VerticallyAttachableBlockItem(ModBlocks.DEAD_GHOST_CORAL_FAN, ModBlocks.DEAD_GHOST_CORAL_WALL_FAN, new Item.Settings(), Direction.DOWN));
