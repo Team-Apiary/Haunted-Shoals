@@ -1,0 +1,27 @@
+{
+	"elements": [
+		{
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"location": "haunted_shoals:ghost_fleet/ghost_ship_medium",
+				"processors": {
+					"processors": []
+				},
+				"projection": "rigid"
+			},
+			"weight": 1
+		},
+		{
+			"element": {
+				"element_type": "minecraft:legacy_single_pool_element",
+				"location": "haunted_shoals:ghost_fleet/ghost_ship_small",
+				"processors": {
+					"processors": []
+				},
+				"projection": "rigid"
+			},
+			"weight": 1
+		}
+	],
+	"fallback": "minecraft:empty"
+}

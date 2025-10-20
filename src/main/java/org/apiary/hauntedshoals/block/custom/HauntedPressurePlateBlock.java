@@ -2,6 +2,8 @@ package org.apiary.hauntedshoals.block.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.ExperienceOrbEntity;
+import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
@@ -23,6 +25,12 @@ public class HauntedPressurePlateBlock extends PressurePlateBlock {
             if(((LivingEntity) entity).hasStatusEffect(ModEffects.HAUNTED)){
                 return super.getCollisionShape(state, world, pos, context);
             }
+        }
+        if(context instanceof EntityShapeContext && (entity = ((EntityShapeContext)context).getEntity()) != null && entity instanceof ItemEntity){
+            return super.getCollisionShape(state, world, pos, context);
+        }
+        if(context instanceof EntityShapeContext && (entity = ((EntityShapeContext)context).getEntity()) != null && entity instanceof ExperienceOrbEntity){
+            return super.getCollisionShape(state, world, pos, context);
         }
         return VoxelShapes.empty();
     }

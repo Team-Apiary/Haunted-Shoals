@@ -12,9 +12,7 @@
       "sound": "minecraft:ambient.soul_sand_valley.additions",
       "tick_chance": 0.0111
     },
-    "fog_color": 8484720,
-    "foliage_color": 8883574,
-    "grass_color": 7832178,
+    "ambient_sound": "minecraft:ambient.soul_sand_valley.loop",
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -25,11 +23,22 @@
       "max_delay": 24000,
       "min_delay": 12000,
       "replace_current_music": false,
-      "sound": "minecraft:music.overworld.swamp"
+      "sound": "minecraft:music.nether.soul_sand_valley"
     },
+    "particle": {
+      "options": {
+        "type": "haunted_shoals:haunted_soul"
+      },
+      "probability": 0.000001
+    },
+
+    "fog_color": 8484720,
+    "foliage_color": 8883574,
+    "grass_color": 7832178,
     "sky_color": 12171705,
     "water_color": 7768221,
     "water_fog_color": 5597568
+
   },
   "features": [
     [],
@@ -72,6 +81,7 @@
       "minecraft:ore_gold_extra",
       "haunted_shoals:disk_stone",
       "minecraft:disk_gravel",
+      "haunted_shoals:stone_spike",
       "haunted_shoals:ocean_pillar_small",
       "haunted_shoals:ocean_pillar_large"
     ],
