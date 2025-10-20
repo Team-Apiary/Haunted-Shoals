@@ -10,7 +10,6 @@ import org.apiary.hauntedshoals.block.custom.*;
 import org.apiary.hauntedshoals.init.ModCommonInit;
 
 //TODO Haunted Lantern
-//TODO Haunted Chest/Barrel
 //TODO Ghost Coral Textures
 
 public class ModBlocks {

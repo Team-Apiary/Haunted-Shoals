@@ -9,6 +9,7 @@ import org.apiary.hauntedshoals.effect.potion.ModPotions;
 import org.apiary.hauntedshoals.item.ModItemGroups;
 import org.apiary.hauntedshoals.item.ModItems;
 import org.apiary.hauntedshoals.block.ModBlocks;
+import org.apiary.hauntedshoals.particle.ModParticleTypes;
 import org.apiary.hauntedshoals.worldgen.feature.ModFeatures;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
@@ -31,6 +32,7 @@ public class ModCommonInit implements ModInitializer{
         ModEffects.registerModEffects();
         ModPotions.registerModPotions();
         ModFeatures.registerModFeatures();
+        ModParticleTypes.registerModParticles();
 
         ModPotionRecipes.recipeRegister();
         ModBlockProperties.propertiesRegister();

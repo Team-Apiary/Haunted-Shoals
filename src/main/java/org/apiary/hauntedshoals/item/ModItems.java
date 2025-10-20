@@ -14,6 +14,8 @@ import org.apiary.hauntedshoals.item.custom.CursedSeaglassItem;
 import org.apiary.hauntedshoals.item.custom.CursedSeaglassStaffItem;
 import org.apiary.hauntedshoals.item.custom.CutlassItem;
 
+//TODO Haunted Cutlass for Wraiths
+
 public class ModItems {
 
     //CURSED SEAGLASS

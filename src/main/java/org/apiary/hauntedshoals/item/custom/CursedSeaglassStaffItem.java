@@ -21,6 +21,7 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.apiary.hauntedshoals.block.ModBlocks;
 import org.apiary.hauntedshoals.effect.ModEffects;
+import org.apiary.hauntedshoals.particle.ModParticleTypes;
 
 import java.util.List;
 import java.util.Map;
@@ -120,7 +121,7 @@ public class CursedSeaglassStaffItem extends Item {
                 double d = direction.getOffsetX() == 0 ? random.nextDouble() : 0.5 + (double)direction.getOffsetX() * 0.6;
                 double e = direction.getOffsetY() == 0 ? random.nextDouble() : 0.5 + (double)direction.getOffsetY() * 0.6;
                 double f = direction.getOffsetZ() == 0 ? random.nextDouble() : 0.5 + (double)direction.getOffsetZ() * 0.6;
-                world.addParticle(ParticleTypes.SOUL, (double)blockPos.getX() + d, (double)blockPos.getY() + e, (double)blockPos.getZ() + f, 0.0, 0.0, 0.0);
+                world.addParticle(ModParticleTypes.HAUNTED_SOUL, (double)blockPos.getX() + d, (double)blockPos.getY() + e, (double)blockPos.getZ() + f, 0.0, 0.0, 0.0);
             }
             world.setBlockState(blockPos, optional.get(), Block.NOTIFY_ALL_AND_REDRAW);
             return ActionResult.success(world.isClient);

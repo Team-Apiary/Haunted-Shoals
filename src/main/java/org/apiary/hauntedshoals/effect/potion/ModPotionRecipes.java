@@ -17,6 +17,11 @@ public class ModPotionRecipes {
                     Items.REDSTONE,
                     ModPotions.LONG_HAUNTED_POTION
             );
+            builder.registerPotionRecipe(
+                    Potions.LONG_SLOW_FALLING,
+                    Items.FERMENTED_SPIDER_EYE,
+                    ModPotions.LONG_HAUNTED_POTION
+            );
         });
     }
 }

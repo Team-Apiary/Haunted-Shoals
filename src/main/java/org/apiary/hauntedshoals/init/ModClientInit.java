@@ -2,8 +2,11 @@ package org.apiary.hauntedshoals.init;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.minecraft.client.render.RenderLayer;
 import org.apiary.hauntedshoals.block.ModBlocks;
+import org.apiary.hauntedshoals.particle.ModParticleTypes;
+import org.apiary.hauntedshoals.particle.custom.HauntedSoulParticle;
 
 public class ModClientInit implements ClientModInitializer {
 
@@ -46,5 +49,10 @@ public class ModClientInit implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GHOST_CORAL, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GHOST_CORAL_FAN, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_GHOST_CORAL_WALL_FAN, RenderLayer.getCutout());
+
+        //PARTICLES
+        ParticleFactoryRegistry.getInstance().register(ModParticleTypes.HAUNTED_SOUL,((spriteProvider) -> (parameters, world, x, y, z, velocityX, velocityY, velocityZ)
+                -> new HauntedSoulParticle(world, x, y, z, velocityX, velocityY, velocityZ, spriteProvider)));
+
     }
 }
