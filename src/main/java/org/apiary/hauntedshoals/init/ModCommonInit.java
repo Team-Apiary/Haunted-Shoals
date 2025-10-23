@@ -16,7 +16,6 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.Logger;
 
 //TODO Wraith Entity
-//TODO Ghost Fleet
 
 public class ModCommonInit implements ModInitializer{
     public static final String MOD_ID = "haunted_shoals";
