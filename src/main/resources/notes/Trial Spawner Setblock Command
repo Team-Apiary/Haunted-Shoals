@@ -1,3 +1,8 @@
 /setblock ~ ~1 ~ trial_spawner[trial_spawner_state=waiting_for_players]
 {normal_config:{spawn_potentials:[{data:{entity:{id:"minecraft:drowned"}},weight:1}],loot_tables_to_eject:[{data:"haunted_shoals:spawners/ghost_fleet/ghost_fleet_trial_spawner",weight:1}]},
 ominous_config:{spawn_potentials:[{data:{entity:{id:"minecraft:drowned"}},weight:1}],loot_tables_to_eject:[{data:"haunted_shoals:spawners/ghost_fleet/ghost_fleet_trial_spawner_ominous",weight:1}]}} replace
+
+
+/setblock ~ ~1 ~ trial_spawner[trial_spawner_state=waiting_for_players]
+{normal_config:{spawn_potentials:[{data:{entity:{id:"minecraft:phantom"}},weight:1}],loot_tables_to_eject:[{data:"haunted_shoals:spawners/ghost_fleet/ghost_fleet_trial_spawner",weight:1}]},
+ominous_config:{spawn_potentials:[{data:{entity:{id:"minecraft:phantom"}},weight:1}],loot_tables_to_eject:[{data:"haunted_shoals:spawners/ghost_fleet/ghost_fleet_trial_spawner_ominous",weight:1}]}} replace

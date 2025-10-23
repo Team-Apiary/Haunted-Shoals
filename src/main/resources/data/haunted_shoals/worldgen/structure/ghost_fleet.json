@@ -1,7 +1,7 @@
 {
   "type": "minecraft:jigsaw",
   "start_pool": "haunted_shoals:ghost_fleet/ghost_ship_large_bows",
-  "biomes": "haunted_shoals:haunted_shoals",
+  "biomes": "#minecraft:is_ocean",
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "liquid_settings": "apply_waterlogging",
   "start_height": {

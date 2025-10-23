@@ -11,6 +11,6 @@ public class TerraBlenderInit implements TerraBlenderApi {
     @Override
     public void onTerraBlenderInitialized()
     {
-        Regions.register(new ModOverworldRegion(Identifier.of(ModCommonInit.MOD_ID, "overworld"), 2));
+        //Regions.register(new ModOverworldRegion(Identifier.of(ModCommonInit.MOD_ID, "overworld"), 2));
     }
 }
