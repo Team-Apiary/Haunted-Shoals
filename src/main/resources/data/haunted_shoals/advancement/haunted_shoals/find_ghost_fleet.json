@@ -1,0 +1,39 @@
+{
+  "parent": "haunted_shoals:haunted_shoals/root",
+  "criteria": {
+    "in_ghost_fleet": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "haunted_shoals:ghost_fleet"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.haunted_shoals.find_ghost_fleet.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "haunted_shoals:haunted_planks"
+    },
+    "title": {
+      "translate": "advancements.haunted_shoals.find_ghost_fleet.title"
+    }
+  },
+  "requirements": [
+    [
+      "in_ghost_fleet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

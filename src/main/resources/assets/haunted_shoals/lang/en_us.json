@@ -73,5 +73,20 @@
   "tag.item.haunted_shoals.dark_haunted_logs": "Dark Haunted Logs",
   "tag.item.haunted_shoals.cutlasses": "Cutlasses",
 
-  "tooltip.haunted_shoals.cursed_seaglass_staff": "Converts certain blocks into a haunted variant."
+  "tooltip.haunted_shoals.cursed_seaglass_staff": "Converts certain blocks into a haunted variant.",
+
+  "advancements.haunted_shoals.root.title": "Haunted Shoals",
+  "advancements.haunted_shoals.root.description": "Ghostly Ships on the Horizon",
+
+  "advancements.haunted_shoals.find_ghost_fleet.title": "Dead Men Do Tell Tales",
+  "advancements.haunted_shoals.find_ghost_fleet.description": "Find a Ghost Fleet, now how to board?",
+
+  "advancements.haunted_shoals.obtain_cursed_seaglass.title": "Treasure of Isla de Muerta",
+  "advancements.haunted_shoals.obtain_cursed_seaglass.description": "Find the Treasure of the Ghost Fleet and Suffer the Consequences",
+
+  "advancements.haunted_shoals.obtain_cursed_seaglass_staff.title": "Pierce the Veil",
+  "advancements.haunted_shoals.obtain_cursed_seaglass_staff.description": "Channel the Haunted Power into a Spooky Staff",
+
+  "advancements.haunted_shoals.obtain_cutlass.title": "Pirate Lord's Favorite",
+  "advancements.haunted_shoals.obtain_cutlass.description": "Craft or Obtain a Cutlass"
 }

@@ -1,0 +1,41 @@
+{
+  "criteria": {
+    "is_ocean": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "#minecraft:is_ocean"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "haunted_shoals:textures/gui/advancements/backgrounds/dark_haunted_planks.png",
+    "description": {
+      "translate": "advancements.haunted_shoals.root.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "haunted_shoals:cursed_seaglass"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.haunted_shoals.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "is_ocean"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

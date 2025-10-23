@@ -1,0 +1,33 @@
+{
+  "parent": "haunted_shoals:haunted_shoals/obtain_cursed_seaglass",
+  "criteria": {
+    "cursed_seaglass_staff": {
+      "conditions": {
+        "items": [
+          {
+            "items": "haunted_shoals:cursed_seaglass_staff"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.haunted_shoals.obtain_cursed_seaglass_staff.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "haunted_shoals:cursed_seaglass_staff"
+    },
+    "title": {
+      "translate": "advancements.haunted_shoals.obtain_cursed_seaglass_staff.title"
+    }
+  },
+  "requirements": [
+    [
+      "cursed_seaglass_staff"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

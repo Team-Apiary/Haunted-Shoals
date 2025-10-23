@@ -1,0 +1,33 @@
+{
+  "parent": "haunted_shoals:haunted_shoals/root",
+  "criteria": {
+    "cutlass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#haunted_shoals:cutlasses"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.haunted_shoals.obtain_cutlass.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "haunted_shoals:gold_cutlass"
+    },
+    "title": {
+      "translate": "advancements.haunted_shoals.obtain_cutlass.title"
+    }
+  },
+  "requirements": [
+    [
+      "cutlass"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

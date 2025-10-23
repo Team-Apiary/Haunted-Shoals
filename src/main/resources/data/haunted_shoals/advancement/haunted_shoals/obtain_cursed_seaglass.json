@@ -1,0 +1,33 @@
+{
+  "parent": "haunted_shoals:haunted_shoals/find_ghost_fleet",
+  "criteria": {
+    "cursed_seaglass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "haunted_shoals:cursed_seaglass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.haunted_shoals.obtain_cursed_seaglass.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "haunted_shoals:haunted_barrel"
+    },
+    "title": {
+      "translate": "advancements.haunted_shoals.obtain_cursed_seaglass.title"
+    }
+  },
+  "requirements": [
+    [
+      "cursed_seaglass"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
