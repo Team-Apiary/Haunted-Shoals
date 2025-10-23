@@ -3,6 +3,7 @@ package org.apiary.hauntedshoals.init;
 import net.fabricmc.api.ModInitializer;
 import org.apiary.hauntedshoals.block.ModBlockProperties;
 import org.apiary.hauntedshoals.block.entity.ModBlockEntities;
+import org.apiary.hauntedshoals.data.ModDataPacks;
 import org.apiary.hauntedshoals.effect.ModEffects;
 import org.apiary.hauntedshoals.effect.potion.ModPotionRecipes;
 import org.apiary.hauntedshoals.effect.potion.ModPotions;
@@ -36,5 +37,7 @@ public class ModCommonInit implements ModInitializer{
 
         ModPotionRecipes.recipeRegister();
         ModBlockProperties.propertiesRegister();
+
+        ModDataPacks.registerDataPacks();
     }
 }

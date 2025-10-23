@@ -1,0 +1,16 @@
+{
+    "pack": {
+        "id": "haunted_shoals",
+        "supported_formats": [
+            48,
+            61
+        ],
+        "pack_format": 48,
+        "description": [
+            {
+                "text": "Musket Mod Compatibility Pack",
+                "color": "#1eb2bc"
+            }
+        ]
+    }
+}

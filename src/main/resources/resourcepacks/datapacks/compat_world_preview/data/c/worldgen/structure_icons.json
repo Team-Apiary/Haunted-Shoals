@@ -1,0 +1,8 @@
+{
+  "haunted_shoals:ghost_fleet": {
+    "texture": "haunted_shoals:textures/compat/world_preview/ghost_fleet.png"
+  },
+  "haunted_shoals:haunted_shipwreck": {
+    "texture": "world_preview:textures/structure/shipwreck.png"
+  }
+}
